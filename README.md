@@ -2,9 +2,9 @@
 
 
 ## Tutorials
-[x] - https://www.le-ar-n.org/
-[x] - https://github.com/compas-teaching/COMPAS-II-FS2022
-[ ] - how to use GIS large robots documentation (turn on, guides for teach-pendant)
+  [x] - https://www.le-ar-n.org/
+  [x] - https://github.com/compas-teaching/COMPAS-II-FS2022
+  [ ] - how to use GIS large robots documentation (turn on, guides for teach-pendant)
 
 ## Licenses
 [ ] - RobotStudio licenses
