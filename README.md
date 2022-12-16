@@ -10,18 +10,13 @@
 - [ ] RobotStudio licenses
 - [ ] RRC license
 
-## Server
-- [ ] Docker 
-- [ ] Virtual Machine
-
 ## Main robot files (URDFs, backups, docker-image)
 - [ ] ABB 6700
 - [ ] ABB 6700 + track
 - [ ] 2x ABB 6700 + track
 - [ ] GoFa CRB 15000
-- [ ] back-ups
-- [ ] docker-image
-- [ ] playground (basic grasshopper files | python files)
+- [ ] template folder strucuture: backups, docker_images, docker (docker-image, virtual, real), virtual_machine, urdfs, playgrounds (basic grasshopper files | python files). 
+
 
 ## Equipment
 - [ ] robot technical documentation (3D model of the end flange for custom tools)
