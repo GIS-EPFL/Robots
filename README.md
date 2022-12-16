@@ -15,17 +15,11 @@
 - [ ] ABB 6700 + track
 - [ ] 2x ABB 6700 + track
 - [ ] GoFa CRB 15000
-- [ ] template folder strucuture: backups, docker_images, docker (docker-image, virtual, real), virtual_machine, urdfs, playgrounds (basic grasshopper files | python files). 
+- [ ] template folder strucuture: backups, docker_images, docker (docker-image, virtual, real), virtual_machine, urdfs, playgrounds (basic grasshopper files | python files), equipment (robot technical documentation (3D model of the end flange for custom tools), custom tools, documentation of tool calibration, tool-changer), calendar (a link to the outlook calendar)
 
-
-## Equipment
-- [ ] robot technical documentation (3D model of the end flange for custom tools)
-- [ ] custom tools
-- [ ] documentation of tool calibration
-- [ ] tool-changer
 
 ## Calendar
-- [ ] a link to the outlook calendar
+- [ ] a link to the outlook calendar and robot installation
 
 
 
