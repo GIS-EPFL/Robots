@@ -1,0 +1,21 @@
+# to create from scratch: conda env create -f environment.yml
+# to update the environment: conda env update --name myenv --file environment.yml --prune
+# or update with environment activated: conda env update --file environment.yml --prune
+
+# for exe pyinstaller: install "conda install pywin32" on win machine
+
+name: robots-gis
+channels:
+    - conda-forge
+dependencies:
+   - python=3.8
+   - pip:
+     - open3d==0.16.0
+     - trimesh==3.15.8
+     - cython==0.29.23
+     - python-fcl==0.7.0.1
+     - tqdm==4.64.1
+     - graphviz==0.20.1
+     - pyinstaller==5.6.2
+     - pillow==9.3.0
+   - git
