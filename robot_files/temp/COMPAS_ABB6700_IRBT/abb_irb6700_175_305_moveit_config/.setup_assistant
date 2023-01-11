@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: abb_irb6700_support
+    relative_path: urdf/irb6700_175_305.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/abb_irb6700_175_305.srdf
+  CONFIG:
+    author_name: petras vestartas
+    author_email: petras.vestartas@epfl.ch
+    generated_timestamp: 1664282949
