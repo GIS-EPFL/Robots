@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SystemProperties>
+  <SystemName>6700-132308</SystemName>
+  <SerialNo>6700-132308</SerialNo>
+  <UsedMedia>
+    <Media path="RobotWare_6.14.0139" name="RobotWare" version="6.14.0139">
+    </Media>
+    <Media path="TrackMotion_6.14.0139" name="TrackMotion" version="6.14.0139">
+    </Media>
+  </UsedMedia>
+  <ControlModule>
+    <Option descr="UDPUC Driver">
+    </Option>
+    <Option descr="661-2 Force Control Base">
+    </Option>
+    <Option descr="English">
+    </Option>
+    <Option descr="603-1 Absolute Accuracy">
+    </Option>
+    <Option descr="687-1 Advanced Robot Motion">
+    </Option>
+    <Option descr="613-1 Collision Detection">
+    </Option>
+    <Option descr="689-1 Externally Guided Motion (EGM)">
+    </Option>
+    <Option descr="617-1 FlexPendant Interface">
+    </Option>
+    <Option descr="614-1 FTP SFTP and NFS client">
+    </Option>
+    <Option descr="623-1 Multitasking">
+    </Option>
+    <Option descr="612-1 Path Offset">
+    </Option>
+    <Option descr="611-1 Path Recovery">
+    </Option>
+    <Option descr="616-1 PC Interface">
+    </Option>
+    <Option descr="888-2 PROFINET Controller/Device">
+    </Option>
+    <Option descr="1125-2 SafeMove Pro">
+    </Option>
+    <Option descr="996-1 Safety Module">
+    </Option>
+    <Option descr="628-1 Sensor Interface">
+    </Option>
+    <Option descr="885-1 SoftMove">
+    </Option>
+    <Option descr="608-1 World Zones">
+    </Option>
+    <Option descr="RobotWare Base">
+    </Option>
+  </ControlModule>
+  <DriveModule>
+    <Name>Robot1</Name>
+    <Option descr="Axis Calibration">
+    </Option>
+    <Option descr="Pendelum Calibration">
+    </Option>
+    <Option descr="Motor Commutation">
+    </Option>
+    <Option descr="Service Info System">
+    </Option>
+    <Option descr="Drive System IRB 460/640/660/760/4600/66xx/6700">
+    </Option>
+    <Option descr="ADU-790A in position X3">
+    </Option>
+    <Option descr="IRB 6700-175/3.05">
+    </Option>
+  </DriveModule>
+  <AdditionalOption>
+    <Name>TrackMotion</Name>
+    <Option descr="Track Motion x004 Base">
+    </Option>
+    <Option descr="Standard carriage Rotation 90 degrees">
+    </Option>
+    <Option descr="IRBT 6004 Type A 6.7 m">
+    </Option>
+  </AdditionalOption>
+</SystemProperties>

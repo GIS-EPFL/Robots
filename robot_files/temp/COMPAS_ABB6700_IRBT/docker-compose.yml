@@ -22,7 +22,7 @@ services:
       # two robots + two rails -> abb_irbt6004_670_tworobots_moveit_config 
       # one robot + one rail   -> abb_irbt6004_670_moveit_config
       # one robot              -> abb_irb6700_175_305_moveit_config 
-      - abb_irbt6004_670_tworobots_moveit_config
+      - abb_irb6700_175_305_moveit_config 
       - demo.launch
       # To launch the RVIZ GUI, change the following to true
       - use_rviz:=true
