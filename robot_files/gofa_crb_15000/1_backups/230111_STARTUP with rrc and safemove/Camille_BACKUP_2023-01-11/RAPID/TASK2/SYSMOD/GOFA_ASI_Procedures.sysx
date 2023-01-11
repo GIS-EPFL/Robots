@@ -1,0 +1,14 @@
+MODULE GOFA_ASI_Procedures(SYSMODULE)
+	PERS tooldata mg_test_230111 := [TRUE,[[29.8313,37.923,17.8324],[1,0,0,0]],[0.2,[0,0,0],[1,0,0,0],0,0,0]];
+    PROC ASI_Routine1()
+        !Example of Customized routine that can be connected with ASI buttons
+        !MoveJ [[0,0,0],[1,0,0,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v100,z0,tool0;
+        TPWrite "Example 1";
+    ENDPROC
+
+    PROC ASI_Routine2()
+        !Example of Customized routine that can be connected with ASI buttons
+        !MoveJ [[0,0,0],[1,0,0,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v100,z0,tool0;
+        TPWrite "Example 2";
+    ENDPROC
+ENDMODULE

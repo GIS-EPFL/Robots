@@ -1,0 +1,115 @@
+#
+# Generated backup file, do not edit.
+#
+# Originally at: /user/TEMP/backup.066883
+# 2023-01-11  11:35:17
+#
+>>SYSTEM_ID:
+15000-100219
+
+>>PRODUCTS_ID:
+RobotOS Version: 6.0.1
+RobotControl Version: 7.7.1
+Wizard Version: 1.4.3
+Robots Version: 1.7.1
+ASI Version: 1.0.6
+FlexPendantSoftwareUpdate Version: 1.9.0
+
+  RobotControl Base
+  3020-2 PROFINET Device
+  3121-1 RW Add-In Prepared
+  3119-1 RobotStudio Connect
+  3106-1 World Zones
+  3113-1 Path Recovery
+  3107-1 Collision Detection
+  3150-1 Collision Avoidance
+  3116-1 FTP and SFTP client
+  3120-2 FlexPendant Essential App Package
+  3151-1 FlexPendant Program Package
+  3114-1 Multitasking
+  3124-1 Externally Guided Motion (EGM)
+  UDPUC Driver
+  3043-3 SafeMove Collaborative
+  3044-2 Keyless Mode Switch, 2 modes
+  3415-1 Force Control
+  Leadthrough
+  Safe Move Plug and Play
+  No Category 0
+  Motor Commutation
+  Service Info System
+  C30-D7 for CRB 15000
+  Wizard
+  CRB 15000-5/0.95
+  ASI
+  FlexPendant App Package
+
+>>HOME:
+All public files and directories
+
+>>SYSPAR:
+SYS.cfg
+SIO.cfg
+PROC.cfg
+MMC.cfg
+MOC.cfg
+EIO.cfg
+
+
+
+>>TASK2: (T_ROB1,,)
+SYSMOD/GOFA_ASI_Procedures.sysx @ 
+PROGMOD/Wizard_LoadData.modx @ 
+PROGMOD/RapidCom.modx @ 
+SYSMOD/RRC_DataRecord.sysx @ 
+SYSMOD/RRC_Base_DataTask_Rob.sysx @ 
+SYSMOD/RRC_Base_Feedback_Rob.sysx @ 
+SYSMOD/RRC_Base_Instructions_Rob.sysx @ 
+SYSMOD/RRC_Base_Utilities_Rob.sysx @ 
+SYSMOD/RRC_Control_Rob.sysx @ 
+SYSMOD/RRC_DataTask_Rob.sysx @ 
+SYSMOD/RRC_Helper_Rob.sysx @ 
+SYSMOD/RRC_UserInteraction_Rob.sysx @ 
+PROGMOD/TuneMasterLib.modx @ 
+SYSMOD/RRC_DataGlobal.sysx @ 
+SYSMOD/Wizard_Params.sysx @ 
+PROGMOD/RRC_Main.modx @ 
+
+>>TASK3: (T_GOFA_LED,,)
+SYSMOD/GOFA_Main.sysx @ 
+
+>>TASK4: (T_CTRL,,)
+SYSMOD/RRC_DataRecord.sysx @ 
+SYSMOD/RRC_UserInteraction.sysx @ 
+PROGMOD/RRC_Main.modx @ 
+SYSMOD/RRC_Base_Feedback_Ctrl.sysx @ 
+SYSMOD/RRC_Base_Instructions_Ctrl.sysx @ 
+SYSMOD/RRC_Config_Ctrl.sysx @ 
+SYSMOD/RRC_Control_Ctrl.sysx @ 
+SYSMOD/RRC_DataGlobal_Ctrl.sysx @ 
+SYSMOD/RRC_DataTask_Ctrl.sysx @ 
+SYSMOD/RRC_EULA_Ctrl.sysx @ 
+SYSMOD/RRC_Helper_Ctrl.sysx @ 
+
+>>TASK5: (T_RX,,)
+SYSMOD/RRC_Control_Rx.sysx @ 
+SYSMOD/RRC_DataTask_Rx.sysx @ 
+SYSMOD/RRC_Log_Rx.sysx @ 
+SYSMOD/RRC_Receiver_Rx.sysx @ 
+SYSMOD/RRC_DataRecord.sysx @ 
+SYSMOD/RRC_DataGlobal.sysx @ 
+SYSMOD/RRC_UserInteraction.sysx @ 
+PROGMOD/RRC_Main.modx @ 
+SYSMOD/RRC_License_RW7.sysx @ 
+
+>>TASK6: (T_TX,,)
+SYSMOD/RRC_DataRecord.sysx @ 
+SYSMOD/RRC_Control_Tx.sysx @ 
+SYSMOD/RRC_DataTask_Tx.sysx @ 
+SYSMOD/RRC_Transmitter_Tx.sysx @ 
+SYSMOD/RRC_DataGlobal.sysx @ 
+SYSMOD/RRC_UserInteraction.sysx @ 
+PROGMOD/RRC_Main.modx @ 
+SYSMOD/RRC_License_RW7.sysx @ 
+
+
+>>EOF:
