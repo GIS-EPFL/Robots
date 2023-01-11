@@ -1,5 +1,11 @@
 # Robots in GIS
 
+## To-do for 2023-01-18
+- [ ] 6700 URDF separate into individual folders and reduce meshes (Petras)
+- [ ] gofa_crv_1500 upload urdfs (Maxence)
+- [ ] create example files both python and grasshopper "playgrounds" (Eleni)
+- [ ] physical test of urdfs in the main hall (together)
+- [ ] two urdf srdf, how to plan 2-robot setup (Jingwen)
 
 ## Tutorials
 - [x] https://www.le-ar-n.org/
