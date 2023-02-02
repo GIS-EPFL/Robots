@@ -12,6 +12,11 @@
 - [ ] write a to wish-list what to ask to Philippe
 - [ ] fix the urdfs
 
+## To-do
+- [ ] planning examples
+- [ ] clean up files with as much python as less grasshopper
+- [ ] custom tool tutorial for the robot studio
+
 ## Tutorials
 - [x] https://www.le-ar-n.org/
 - [x] https://github.com/compas-teaching/COMPAS-II-FS2022
