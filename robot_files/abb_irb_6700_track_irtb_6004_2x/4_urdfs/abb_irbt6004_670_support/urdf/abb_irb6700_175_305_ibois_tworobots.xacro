@@ -1,24 +1,29 @@
 <?xml version="1.0"?>
 <robot name="abb_irb6700_175_305_ibois" xmlns:xacro="http://ros.org/wiki/xacro">
+
+
+  <!--linking another xacro file of the robot without rail-->
   <xacro:include filename="$(find abb_irbt6004_670_support)/urdf/abb_irb6700_175_305_ibois_macro.xacro"/>
+  <xacro:include filename="$(find abb_irbt6004_670_support)/urdf/abb_irb6700_175_305_crcl_macro.xacro"/>
 
   <link name="world" />
 
   <joint name="world_joint1" type="fixed">
       <parent link="world" />
       <child link = "rob1_axis" />
-      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+      <origin xyz="0 -1.5 0.0" rpy="0.0 0.0 0.0" /> <!--translation of the track-->
   </joint>
 
-  <xacro:abb_irb6700_175_305_ibois prefix="rob1_" />
+  <xacro:abb_irb6700_175_305_ibois prefix="rob1_" /> <!--robot with different base rotation-->
 
 
   <joint name="world_joint2" type="fixed">
       <parent link="world" />
       <child link = "rob2_axis" />
-      <origin xyz="0.0 3.0 0.0" rpy="0.0 0.0 0.0" />
+      <origin xyz="0 1.5 0.0" rpy="0.0 0.0 0" /> <!--translation of the track-->
   </joint>
 
-  <xacro:abb_irb6700_175_305_ibois prefix="rob2_" />
+  <xacro:abb_irb6700_175_305_crcl prefix="rob2_" /> <!--robot with different base rotation-->
+
 
 </robot>

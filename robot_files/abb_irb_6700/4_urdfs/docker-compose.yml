@@ -22,6 +22,8 @@ services:
       - use_rviz:=true
       - pipeline:=ompl
 
+  # to create configuration uncomment the following lines
+  # also run the XLaunch server on windows
   # moveit-service-setup-assistant:
   #   image: gramaziokohler/ros-noetic-moveit
   #   container_name: moveit-service-setup-assistant
