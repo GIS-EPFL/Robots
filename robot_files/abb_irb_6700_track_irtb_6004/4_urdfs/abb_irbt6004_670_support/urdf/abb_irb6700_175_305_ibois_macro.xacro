@@ -13,7 +13,7 @@
     <joint name="${prefix}abb_joint" type="fixed">
       <parent link="${prefix}pedestal"/>
       <child  link="${prefix}base_link"/>
-      <origin xyz="0 0 0 " rpy="0 0 0 "/> <!--rotation of robot pedestal-->
+      <origin xyz="0 0 0 " rpy="0 0 -1.57079632679489661923 "/> <!--rotation of robot pedestal 3.14159265358979323846 1.57079632679489661923-->
       <dynamics damping="0.2" friction="0" />
     </joint>
 
