@@ -20,7 +20,7 @@ services:
       - abb_irbt6004_670_moveit_config
       - demo.launch
       # To launch the RVIZ GUI, change the following to true
-      - use_rviz:=true
+      - use_rviz:=false
       - pipeline:=ompl
 
   # to create configuration uncomment the following lines
@@ -89,4 +89,20 @@ services:
       - file_server
       - file_server.launch
 
-  
+  abb-driver:
+    image: compasrrc/compas_rrc_driver:v1.1.2
+    container_name: abb-driver
+    environment:
+      - ROS_HOSTNAME=abb-driver
+      - ROS_MASTER_URI=http://ros-master:11311
+    depends_on:
+      - ros-core
+    command:
+      - roslaunch
+      - --wait
+      - compas_rrc_driver
+      - bringup.launch
+      - robot_ip:=192.168.125.1
+      - robot_streaming_port:=30101
+      - robot_state_port:=30201
+      - namespace:=rob1

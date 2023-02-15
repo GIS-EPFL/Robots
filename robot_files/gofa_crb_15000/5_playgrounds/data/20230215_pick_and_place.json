@@ -1,0 +1,324 @@
+{
+    "actions": [
+        {
+            "parameters": {
+                "tool_name": "tool0"
+            },
+            "name": "SetTool",
+            "id": 0,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "wobj_name": "wobj0"
+            },
+            "name": "SetWorkObject",
+            "id": 1,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "value": 0,
+                "io_name": "ABB_Scalable_IO_0_DO16"
+            },
+            "name": "SetDigital",
+            "id": 2,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "text": "Gripper is off"
+            },
+            "name": "PrintText",
+            "id": 3,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": -1,
+                "feedback_level": 2,
+                "frame": {
+                    "dtype": "compas.geometry/Frame",
+                    "value": {
+                        "yaxis": [
+                            -1.3560180095362962e-05,
+                            0.99999998723886563,
+                            -0.00015918036978056663
+                        ],
+                        "xaxis": [
+                            -0.99999999981506904,
+                            -1.3562350756890709e-05,
+                            -1.3635418534689899e-05
+                        ],
+                        "point": [
+                            0.010751573892197599,
+                            478.96612131042497,
+                            65.152293827831997
+                        ]
+                    },
+                    "guid": "027abe30-e542-47db-9f28-1be2485b5542"
+                },
+                "speed": 200.0,
+                "motion_type": "rrc.Motion.LINEAR"
+            },
+            "name": "MoveToFrame",
+            "id": 4,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": -1,
+                "feedback_level": 2,
+                "frame": {
+                    "dtype": "compas.geometry/Frame",
+                    "value": {
+                        "yaxis": [
+                            3.9420042870251633e-06,
+                            0.99999999999223022,
+                            -1.8900320986254899e-08
+                        ],
+                        "xaxis": [
+                            -0.99999999998478939,
+                            3.942004359907755e-06,
+                            3.8577082260106272e-06
+                        ],
+                        "point": [
+                            550.00014064942206,
+                            -0.00042889375921076003,
+                            564.59493408317292
+                        ]
+                    },
+                    "guid": "3eb8c47f-f94d-434b-abc0-0f0d9018d594"
+                },
+                "speed": 200.0,
+                "motion_type": "rrc.Motion.LINEAR"
+            },
+            "name": "MoveToFrame",
+            "id": 5,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": -1,
+                "feedback_level": 2,
+                "frame": {
+                    "dtype": "compas.geometry/Frame",
+                    "value": {
+                        "yaxis": [
+                            0.39385554065313005,
+                            -0.91917235222608318,
+                            1.2246063538223773e-16
+                        ],
+                        "xaxis": [
+                            0.91917235222608318,
+                            0.39385554065313005,
+                            0.0
+                        ],
+                        "point": [
+                            634.12243797976794,
+                            240.64752754459502,
+                            68.5
+                        ]
+                    },
+                    "guid": "96ce0779-1ae1-4165-b71d-418b143cbf78"
+                },
+                "speed": 200.0,
+                "motion_type": "rrc.Motion.LINEAR"
+            },
+            "name": "MoveToFrame",
+            "id": 6,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": -1,
+                "feedback_level": 2,
+                "frame": {
+                    "dtype": "compas.geometry/Frame",
+                    "value": {
+                        "yaxis": [
+                            0.39385554065313005,
+                            -0.91917235222608318,
+                            1.2246063538223773e-16
+                        ],
+                        "xaxis": [
+                            0.91917235222608318,
+                            0.39385554065313005,
+                            0.0
+                        ],
+                        "point": [
+                            634.12243797976794,
+                            240.64752754459502,
+                            18.5
+                        ]
+                    },
+                    "guid": "478d3886-cfc5-4cd6-9465-7636bdc99dde"
+                },
+                "speed": 200.0,
+                "motion_type": "rrc.Motion.LINEAR"
+            },
+            "name": "MoveToFrame",
+            "id": 7,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "value": 0,
+                "io_name": "ABB_Scalable_IO_0_DO16"
+            },
+            "name": "SetDigital",
+            "id": 8,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "text": "Gripper is on"
+            },
+            "name": "PrintText",
+            "id": 9,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": -1,
+                "feedback_level": 2,
+                "frame": {
+                    "dtype": "compas.geometry/Frame",
+                    "value": {
+                        "yaxis": [
+                            0.39385554065313005,
+                            -0.91917235222608318,
+                            1.2246063538223773e-16
+                        ],
+                        "xaxis": [
+                            0.91917235222608318,
+                            0.39385554065313005,
+                            0.0
+                        ],
+                        "point": [
+                            634.12243797976794,
+                            240.64752754459502,
+                            68.5
+                        ]
+                    },
+                    "guid": "f3074a3b-b3f0-44a0-8048-6134814f6c17"
+                },
+                "speed": 200.0,
+                "motion_type": "rrc.Motion.LINEAR"
+            },
+            "name": "MoveToFrame",
+            "id": 10,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": -1,
+                "feedback_level": 2,
+                "frame": {
+                    "dtype": "compas.geometry/Frame",
+                    "value": {
+                        "yaxis": [
+                            3.9420042870251633e-06,
+                            0.99999999999223022,
+                            -1.8900320986254899e-08
+                        ],
+                        "xaxis": [
+                            -0.99999999998478939,
+                            3.942004359907755e-06,
+                            3.8577082260106272e-06
+                        ],
+                        "point": [
+                            550.00014064942206,
+                            -0.00042889375921076003,
+                            564.59493408317292
+                        ]
+                    },
+                    "guid": "6742d706-07e4-4781-b544-1a62f8c257c9"
+                },
+                "speed": 200.0,
+                "motion_type": "rrc.Motion.LINEAR"
+            },
+            "name": "MoveToFrame",
+            "id": 11,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": -1,
+                "feedback_level": 2,
+                "frame": {
+                    "dtype": "compas.geometry/Frame",
+                    "value": {
+                        "yaxis": [
+                            -1.3560180095362962e-05,
+                            0.99999998723886563,
+                            -0.00015918036978056663
+                        ],
+                        "xaxis": [
+                            -0.99999999981506904,
+                            -1.3562350756890709e-05,
+                            -1.3635418534689899e-05
+                        ],
+                        "point": [
+                            0.010751573892197599,
+                            478.96612131042497,
+                            65.152293827831997
+                        ]
+                    },
+                    "guid": "6d69002b-30cc-4e93-9250-d035283a6390"
+                },
+                "speed": 200.0,
+                "motion_type": "rrc.Motion.LINEAR"
+            },
+            "name": "MoveToFrame",
+            "id": 12,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": -1,
+                "feedback_level": 2,
+                "frame": {
+                    "dtype": "compas.geometry/Frame",
+                    "value": {
+                        "yaxis": [
+                            -1.3560180095362962e-05,
+                            0.99999998723886563,
+                            -0.00015918036978056663
+                        ],
+                        "xaxis": [
+                            -0.99999999981506904,
+                            -1.3562350756890709e-05,
+                            -1.3635418534689899e-05
+                        ],
+                        "point": [
+                            0.010751573892197599,
+                            478.96612131042497,
+                            15.152293827832001
+                        ]
+                    },
+                    "guid": "be96f25e-0600-49bb-a8d1-a47b3352bb40"
+                },
+                "speed": 200.0,
+                "motion_type": "rrc.Motion.LINEAR"
+            },
+            "name": "MoveToFrame",
+            "id": 13,
+            "dependency_ids": [],
+            "namespace": "/"
+        }
+    ]
+}
