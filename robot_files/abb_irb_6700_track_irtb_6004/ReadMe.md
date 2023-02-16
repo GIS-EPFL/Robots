@@ -2,19 +2,6 @@
 
 This is a documentation for the robot ABB IRB 6700 with a track motion IRBT 6004
 
-## Check if Docker is working
-
-Go to folder via Visual Studio Code: **\Robots\robot_files\abb_irb_6700_track_irtb_6004\4_urdfs**
-
-Open file and right click to compose up: **docker-compose.yml**
-
-![1676555331659](image/ReadMe/1676555331659.png)
-
-Troubleshoot: if you have previous docker images running compose them down or use Docker desktop:
-
-![1676555395055](image/ReadMe/1676555395055.png)After opening the file: **\Robots\robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irb_6700_track_irtb_6004.gh** , you should see a similar robot configuration:
-
-![1676555847046](image/ReadMe/1676555847046.png)
 
 ## Running Robot
 
@@ -68,3 +55,17 @@ Examples **\Robots\robot_files\abb_irb_6700_track_irtb_6004\5_playgrounds\python
 
 * get current robot position and move by 100 mm in X-Axis **get_and_move_to_target.py**
 * get current robot position and rotate 1st axis by 15 degrees **get_and_move_to_joints.py**
+
+## Check if Docker is working
+
+Go to folder via Visual Studio Code: **\Robots\robot_files\abb_irb_6700_track_irtb_6004\4_urdfs**
+
+Open file and right click to compose up: **docker-compose.yml**
+
+![1676555331659](image/ReadMe/1676555331659.png)
+
+Troubleshoot: if you have previous docker images running compose them down or use Docker desktop:
+
+![1676555395055](image/ReadMe/1676555395055.png)After opening the file: **\Robots\robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irb_6700_track_irtb_6004.gh** , you should see a similar robot configuration:
+
+![1676555847046](image/ReadMe/1676555847046.png)
