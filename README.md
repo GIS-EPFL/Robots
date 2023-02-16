@@ -1,10 +1,14 @@
 # Robots in GIS
 
-## To-do for 2023-02-16
+## To-do for 2023-03-02
 
 - [ ] test urdfs in real with CRCL robot with an example: a) ios for the pneumatic gripper (Gregory) b) different ways of sending, c) different ways of motion
 - [ ] write a wish-list what to ask to Philippe
-- [ ] fix the urdfs
+- [ ] Robot Setup: start from 0,0,0 and move the robot to the center of the plane
+- [ ] Move robot axis while keeping the plane orientation the same
+- [ ] linear movement
+- [ ] find an object that represents a plane, move robot to that position, get the position in code, move robot out of tha position, then from code move the robot to the measured target, check if the result is the same
+- [ ] io's and robot studio
 
 ## To-do
 
@@ -15,9 +19,10 @@
 ## Tutorials
 
 - [X] [Connect to the robot and check a basic movement](\Robots\robot_files\abb_irb_6700_track_irtb_6004\5_playgrounds\ReadMe.md)
+- [ ] how to use GIS large robots documentation (turn on, guides for teach-pendant)
 - [X] https://www.le-ar-n.org/
 - [X] https://github.com/compas-teaching/COMPAS-II-FS2022
-- [ ] how to use GIS large robots documentation (turn on, guides for teach-pendant)
+
 
 ## Licenses
 
