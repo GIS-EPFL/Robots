@@ -18,58 +18,53 @@ Troubleshoot: if you have previous docker images running compose them down or us
 
 ## Running Robot
 
-Compose up the docker image that has the docker driver added and connect with the enthernet cable - C:\IBOIS57_Code\Software\Robots\robot_files\abb_irb_6700_track_irtb_6004\2_docker\docker-compose.yml
+Get the 💰 **compas_rrc 💰** using Anaconda prompt: **conda create -c conda-forge -n robots-gis compas_rrc python=3.8**
 
-This docker contains the driver service:
+Connect with the Ethernet cable [💻](https://emojiterra.com/laptop-computer/) -> [🔌](https://emojiterra.com/electric-plug/) -> [🤖](https://emojipedia.org/robot/)
 
-```
-abb-driver:
+Configure [🌐 ](https://emojipedia.org/globe-with-meridians/)IP address of the pc matching the driver ip of the robot:
 
-    image:compasrrc/compas_rrc_driver:v1.1.2
+![1676569715326](image/ReadMe/1676569715326.png)
 
-    container_name:abb-driver
+In teach pendant [🎮](https://emojipedia.org/video-game/) click top right corner and click production window[🎮](https://emojipedia.org/video-game/) :
 
-    environment:
+![1676569789202](image/ReadMe/1676569789202.png)
 
-    - ROS_HOSTNAME=abb-driver
+In teach pendant [🎮](https://emojipedia.org/video-game/) production window -> click PP to main [🎮](https://emojipedia.org/video-game/)  :
 
-    - ROS_MASTER_URI=http://ros-master:11311
+![1676569859560](image/ReadMe/1676569859560.png)
 
-    depends_on:
+In teach pendant [🎮](https://emojipedia.org/video-game/)  production window -> click PP to main -> click yes [🎮](https://emojipedia.org/video-game/)  :
 
-    - ros-core
+![1676569959419](image/ReadMe/1676569959419.png)
 
-    command:
+In teach pendant [🎮](https://emojipedia.org/video-game/)  production window -> click PP to main -> click yes -> hit play button [🎮](https://emojipedia.org/video-game/)  :
 
-    - roslaunch
+![1676569989078](image/ReadMe/1676569989078.png)
 
-    - --wait
-
-    - compas_rrc_driver
-
-    - bringup.launch
-
-    - robot_ip:=192.168.125.1
-
-    - robot_streaming_port:=30101
-
-    - robot_state_port:=30201
-
-    - namespace:=rob1
-```
-
-On teach go to production window
-
-compose down in vscode ->PP to Main in teach pendant
-
-Set up ip address of the pc matching the driver ip of the robot:
+In VSCode right click on the docker-compose and compose up, be sure that previous docker images are composed down [💻](https://emojiterra.com/laptop-computer/) use this file: **\Robots\robot_files\abb_irb_6700_track_irtb_6004\2_docker\docker-compose.yml** :
 
 ![1676559455567](image/ReadMe/1676559455567.png)
 
+In teach pendant [🎮](https://emojipedia.org/video-game/)  this window must change to the next image [🎮](https://emojipedia.org/video-game/)  :
+
+![1676570084209](image/ReadMe/1676570084209.png)
+
+In teach pendant [🎮](https://emojipedia.org/video-game/)  the new message should look like this, else you are not connected and see only the previous screenshot [🎮](https://emojipedia.org/video-game/)  :
+
+![1676570138449](image/ReadMe/1676570138449.png)
+
 ## Playgrounds
 
-CTRL+SHIFT+P -> Command Prompt
+Setup the VSCode interface:
 
-get_and_move_to_joints.py
+* In VSCode user Command Prompt (CTRL+SHIFT+P -> Terminal: Select Default Profile ) [💻](https://emojiterra.com/laptop-computer/)
+* In VSCode user Command Prompt (CTRL+SHIFT+P -> Python: Select Interpreter ) [💻](https://emojiterra.com/laptop-computer/)
+* Right click on the Python code -> Run Python File in Terminal [💻](https://emojiterra.com/laptop-computer/)
 
-get_and_move_to_target.py
+![1676570618033](image/ReadMe/1676570618033.png)
+
+Examples **\Robots\robot_files\abb_irb_6700_track_irtb_6004\5_playgrounds\python**
+
+* get current robot position and move by 100 mm in X-Axis **get_and_move_to_target.py**
+* get current robot position and rotate 1st axis by 15 degrees **get_and_move_to_joints.py**
