@@ -7,7 +7,7 @@
 
 ### Axis Alignment and Default Orientation of the Robot
 
-When robots axes are aligned, meaning all angles are set to zero the robot looks like the image below. Moving to this position might be needed when the batteries of the robot are out-of charge. (To-Do: write a procedure of teach-pendant what has to be done to reset the memore of the robot when the batteries are out of charge )
+When robots axes are aligned, meaning all angles are set to zero the robot looks like the image below. Moving to this position might be needed when the batteries of the robot are out-of charge. (To-Do: write a procedure of teach-pendant what has to be done to reset the memory of the robot when the batteries are out of charge )
 
 ![1676553389308](image/ReadMe/1676553389308.png)
 
