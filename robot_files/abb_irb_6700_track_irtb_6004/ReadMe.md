@@ -3,7 +3,7 @@
 This is a documentation for the robot ABB IRB 6700 with a track motion IRBT 6004
 
 
-## Running Robot
+## How to connect to Robot - compas_rrc
 
 * Get the 💰 **compas_rrc 💰** using Anaconda prompt: 
 
@@ -45,7 +45,7 @@ conda create -c conda-forge -n robots-gis compas_rrc python=3.8
 
 ![1676570138449](image/ReadMe/1676570138449.png)
 
-## Playgrounds
+## How to move a robot? - Playgrounds
 
 Setup the VSCode interface:
 
