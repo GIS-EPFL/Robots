@@ -56,7 +56,7 @@ Examples **\Robots\robot_files\abb_irb_6700_track_irtb_6004\5_playgrounds\python
 * get current robot position and move by 100 mm in X-Axis **get_and_move_to_target.py**
 * get current robot position and rotate 1st axis by 15 degrees **get_and_move_to_joints.py**
 
-## Check if Docker is working
+## Check if Docker and URDF is working
 
 Go to folder via Visual Studio Code: **\Robots\robot_files\abb_irb_6700_track_irtb_6004\4_urdfs**
 
