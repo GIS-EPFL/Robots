@@ -76,7 +76,7 @@ services:
     container_name: ros-fileserver
     environment:
       - ROS_HOSTNAME=ros-fileserver
-      - ROS_MASTER_URI=http://ros-core:11311
+      - ROS_MASTER_URI=http://ros-core:11311 # used to be master 
     depends_on:
       - ros-core
     volumes:
@@ -94,7 +94,7 @@ services:
     container_name: abb-driver
     environment:
       - ROS_HOSTNAME=abb-driver
-      - ROS_MASTER_URI=http://ros-master:11311
+      - ROS_MASTER_URI=http://ros-core:11311
     depends_on:
       - ros-core
     command:

@@ -26,7 +26,7 @@ if __name__ == '__main__':
     print(frame, external_axes)
 
     # Change the x-value [mm]
-    frame.point[0] -= 50
+    frame.point[0] -= 100
 
     # Set speed [mm/s]
     speed = 100
@@ -39,7 +39,7 @@ if __name__ == '__main__':
 
     # End of Code
     print('Finished')
-
+ 
     # Close client
     ros.close()
     ros.terminate()
