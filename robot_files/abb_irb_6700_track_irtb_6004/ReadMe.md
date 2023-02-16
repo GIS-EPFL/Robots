@@ -29,7 +29,7 @@ In teach pendant [🎮](https://emojipedia.org/video-game/)  production window -
 
 ![1676569989078](image/ReadMe/1676569989078.png)
 
-In VSCode right click on the docker-compose and compose up, be sure that previous docker images are composed down [💻](https://emojiterra.com/laptop-computer/) use this file: **\Robots\robot_files\abb_irb_6700_track_irtb_6004\2_docker\docker-compose.yml** :
+In VSCode right click "compose-up", while the docker-compose.yml. Before doing that bee sure that previous docker instances are composed down [💻](https://emojiterra.com/laptop-computer/) use this file: **\Robots\robot_files\abb_irb_6700_track_irtb_6004\2_docker\docker-compose.yml** :
 
 ![1676559455567](image/ReadMe/1676559455567.png)
 
