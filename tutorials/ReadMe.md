@@ -25,11 +25,11 @@ When robots axes are aligned, meaning all angles are set to zero the robot looks
 
 ## Heights of the Ground | Rail | Pedestal |
 
-The top of the pedestal is the robot Origin: 0.00 mm
+The top of the pedestal is the robot Origin: **0.00 mm**
 
-The top mounting plate of the rail is the pedestal Origin: - 250 mm
+The top mounting plate of the rail is the pedestal Origin: **-250 mm**
 
-The floor, even if it is not completely flat Origin: - 700 mm
+The floor, even if it is not completely flat Origin: **-700 mm**
 
 ![1676553962521](image/ReadMe/1676553962521.png)
 
