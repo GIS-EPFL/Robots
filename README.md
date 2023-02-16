@@ -19,7 +19,7 @@
 ## Tutorials
 
 - [X] [ABB6700 + Track Connect to the robot and check a basic movement](https://github.com/GIS-EPFL/Robots/tree/main/robot_files/abb_irb_6700_track_irtb_6004)
-- [ ] [ABB6700 + Track technical specifications, teach pendant, controller](turn on, guides for teach-pendant)(https://github.com/GIS-EPFL/Robots/tree/main/tutorials)
+- [ ] [ABB6700 + Track technical specifications, teach pendant, controller](https://github.com/GIS-EPFL/Robots/tree/main/tutorials)
 - [X] https://www.le-ar-n.org/
 - [X] https://github.com/compas-teaching/COMPAS-II-FS2022
 
