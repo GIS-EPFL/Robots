@@ -13,8 +13,8 @@ conda create -c conda-forge -n robots-gis compas_rrc python=3.8
 
 * Connect with the Ethernet cable [💻](https://emojiterra.com/laptop-computer/) -> [🔌](https://emojiterra.com/electric-plug/) -> [🤖](https://emojipedia.org/robot/)
 
-* Configure [🌐 ](https://emojipedia.org/globe-with-meridians/)IP address of the pc matching the driver ip of the robot, with a different ending e.g. 2 instead of 1:
-* 
+* Configure [🌐 ](https://emojipedia.org/globe-with-meridians/)IP address of the pc matching the driver ip of the robot, with a different ending e.g. xxx.xxx.xxx.2 instead of 1:
+
 ![1676569715326](image/ReadMe/1676569715326.png)
 
 * In teach pendant [🎮](https://emojipedia.org/video-game/) click top right corner and click production window[🎮](https://emojipedia.org/video-game/) :
