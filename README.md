@@ -18,7 +18,7 @@
 
 ## Tutorials
 
-- [X] [Connect to the robot and check a basic movement](https://github.com/GIS-EPFL/Robots/tree/main/robot_files/abb_irb_6700_track_irtb_6004/ReadMe.md)
+- [X] [ABB6700 + Track Connect to the robot and check a basic movement](https://github.com/GIS-EPFL/Robots/tree/main/robot_files/abb_irb_6700_track_irtb_6004)
 - [ ] how to use GIS large robots documentation (turn on, guides for teach-pendant)
 - [X] https://www.le-ar-n.org/
 - [X] https://github.com/compas-teaching/COMPAS-II-FS2022
