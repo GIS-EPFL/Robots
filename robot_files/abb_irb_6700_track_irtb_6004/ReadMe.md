@@ -7,9 +7,9 @@ This is a documentation for the robot ABB IRB 6700 with a track motion IRBT 6004
 
 Get the 💰 **compas_rrc 💰** using Anaconda prompt: 
 
-'''
+``` bash
 conda create -c conda-forge -n robots-gis compas_rrc python=3.8**
-'''
+```
 
 Connect with the Ethernet cable [💻](https://emojiterra.com/laptop-computer/) -> [🔌](https://emojiterra.com/electric-plug/) -> [🤖](https://emojipedia.org/robot/)
 
