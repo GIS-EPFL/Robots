@@ -81,7 +81,7 @@ services:
     container_name: abb-driver
     environment:
       - ROS_HOSTNAME=abb-driver
-      - ROS_MASTER_URI=http://ros-master:11311
+      - ROS_MASTER_URI=http://ros-core:11311
     depends_on:
       - ros-master
     command:
