@@ -45,8 +45,8 @@ In teach pendant [🎮](https://emojipedia.org/video-game/)  the new message sho
 
 Setup the VSCode interface:
 
-* In VSCode user Command Prompt (CTRL+SHIFT+P -> Terminal: Select Default Profile ) [💻](https://emojiterra.com/laptop-computer/)
-* In VSCode user Command Prompt (CTRL+SHIFT+P -> Python: Select Interpreter ) [💻](https://emojiterra.com/laptop-computer/)
+* In VSCode choose Command Prompt as a default profile (CTRL+SHIFT+P -> Terminal: Select Default Profile ) [💻](https://emojiterra.com/laptop-computer/)
+* In VSCode select the correct python environment "robots-gis" (CTRL+SHIFT+P -> Python: Select Interpreter ) [💻](https://emojiterra.com/laptop-computer/)
 * Right click on the Python code -> Run Python File in Terminal [💻](https://emojiterra.com/laptop-computer/)
 
 ![1676570618033](image/ReadMe/1676570618033.png)
