@@ -10,6 +10,18 @@
 - [ ] find an object that represents a plane, move robot to that position, get the position in code, move robot out of tha position, then from code move the robot to the measured target, check if the result is the same
 - [ ] io's and robot studio
 
+## To-do for 2023-03-09
+
+- [ ] test grasshopper playground, start from 0,0,0 of robot and move to plane at the center of the setup
+- [ ] linear and plane-to-plane movements
+- [ ] go to position and read values, then go out of position and try to come back to the same position
+- [ ] move rail while keeping the end effector at the same position
+- [ ] ios of robot
+
+## To-do for the next time
+
+- [ ] send multiple positions around the same points and check if it arrives in the same point, if it is the case the we need to use translation value
+
 ## To-do
 
 - [ ] planning examples
