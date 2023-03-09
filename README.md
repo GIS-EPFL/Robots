@@ -18,6 +18,10 @@
 - [ ] move rail while keeping the end effector at the same position
 - [ ] ios of robot
 
+## To-do for the next time
+
+- [ ] send multiple positions around the same points and check if it arrives in the same point, if it is the case the we need to use translation value
+
 ## To-do
 
 - [ ] planning examples
