@@ -1,15 +1,34 @@
+# Moveit Planning + RRC drive with real robot
 version: '3'
 services:
+  abb-driver:
+    image: gramaziokohler/ros-noetic-dfab:22.05
+    container_name: abb-driver
+    environment:
+      - ROS_HOSTNAME=abb-driver
+      - ROS_MASTER_URI=http://ros-core:11311
+    depends_on:
+      - ros-core
+    command:
+      - roslaunch
+      - --wait
+      - compas_rrc_driver
+      - bringup.launch
+      - robot_ip:=192.168.125.1
+      - robot_streaming_port:=30101
+      - robot_state_port:=30201
+      - namespace:=rob1
+
   moveit-service:
-    image: gramaziokohler/ros-noetic-moveit
+    image: gramaziokohler/ros-noetic-dfab:22.05
     container_name: moveit-service
     environment:
       - ROS_HOSTNAME=moveit-service
-      - ROS_MASTER_URI=http://ros-master:11311
+      - ROS_MASTER_URI=http://ros-core:11311
       # GUI: To forward the GUI to an external X11 server (eg. VcXsrv), uncomment the following line
       - DISPLAY=host.docker.internal:0.0 # tell ROS to send the video image outside of the container
     depends_on:
-      - ros-master
+      - ros-core
     volumes:
       - ../../abb_experimental:/root/catkin_ws/src/abb_experimental
       - ./abb_irbt6004_670_support:/root/catkin_ws/src/abb_irbt6004_670_support #track
@@ -22,52 +41,25 @@ services:
       # To launch the RVIZ GUI, change the following to true
       - use_rviz:=false
       - pipeline:=ompl
-  
-  #to create configuration uncomment the following lines
-    #also run the XLaunch server on windows
-    # moveit-service-setup-assistant:
-    #   image: gramaziokohler/ros-noetic-moveit
-    #   container_name: moveit-service-setup-assistant
-    #   environment:
-    #     - ROS_HOSTNAME=moveit-service-setup-assistant
-    #     - ROS_MASTER_URI=http://ros-master:11311
-    #     # GUI: To forward the GUI to an external X11 server (eg. XMing), uncomment the following line
-    #     - DISPLAY=host.docker.internal:0.0
-    #   depends_on:
-    #     - ros-core
-    #   volumes:
-    #     - ../abb_experimental:/root/catkin_ws/src/abb_experimental
-    #     - ../abb_irb6700_175_305_moveit_config:/root/catkin_ws/src/abb_irb6700_175_305_moveit_config
-    #     - ./abb_irbt6004_670_support:/root/catkin_ws/src/abb_irbt6004_670_support
-    #     - ./abb_irbt6004_670_moveit_config:/root/catkin_ws/src/abb_irbt6004_670_moveit_config
-    #     - ./abb_irbt6004_670_tworobots_moveit_config:/root/catkin_ws/src/abb_irbt6004_670_tworobots_moveit_config
-    #   command:
-    #     - roslaunch
-    #     - --wait
-    #     - moveit_setup_assistant
-    #     - setup_assistant.launch
 
-  ros-master:
-    image: compasrrc/compas_rrc_driver:v1.1.2
-    container_name: ros-master
-    environment:
-      -  ROS_HOSTNAME=ros-master
-      - ROS_MASTER_URI=http://ros-master:11311
+  ros-core:
+    image: gramaziokohler/ros-noetic-dfab:22.05
+    container_name: ros-core
     ports:
       - "11311:11311"
     command:
       - roscore
 
   ros-bridge:
-    image: compasrrc/compas_rrc_driver:v1.1.2
+    image: gramaziokohler/ros-noetic-dfab:22.05
     container_name: ros-bridge
     environment:
-      - ROS_HOSTNAME=ros-bridge
-      - ROS_MASTER_URI=http://ros-master:11311
+      - "ROS_HOSTNAME=ros-bridge"
+      - "ROS_MASTER_URI=http://ros-core:11311"
     ports:
       - "9090:9090"
     depends_on:
-      - ros-master
+      - ros-core
     command:
       - roslaunch
       - --wait
@@ -75,20 +67,20 @@ services:
       - rosbridge_websocket.launch
       - unregister_timeout:=28800      # This horribly long timeout of 8 hours is to workaround this issue: https://github.com/RobotWebTools/rosbridge_suite/issues/138
 
-  abb-driver:
-    image: compasrrc/compas_rrc_driver:v1.1.2
-    container_name: abb-driver
+  ros-fileserver:
+    image: gramaziokohler/ros-noetic-dfab:22.05
+    container_name: ros-fileserver
     environment:
-      - ROS_HOSTNAME=abb-driver
-      - ROS_MASTER_URI=http://ros-master:11311
+      - ROS_HOSTNAME=ros-fileserver
+      - ROS_MASTER_URI=http://ros-core:11311
     depends_on:
-      - ros-master
+      - ros-core
+    volumes:
+      - ../../abb_experimental:/root/catkin_ws/src/abb_experimental
+      - ./abb_irbt6004_670_support:/root/catkin_ws/src/abb_irbt6004_670_support # track
+      - ./abb_irbt6004_670_moveit_config:/root/catkin_ws/src/abb_irbt6004_670_moveit_config
     command:
       - roslaunch
       - --wait
-      - compas_rrc_driver
-      - bringup.launch
-      - robot_ip:=192.168.125.1
-      - robot_streaming_port:=30101
-      - robot_state_port:=30201
-      - namespace:=rob1
+      - file_server
+      - file_server.launch
