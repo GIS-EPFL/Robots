@@ -26,8 +26,15 @@ if __name__ == '__main__':
     print(robot_joints, external_axes)
 
     # Change a joint value [°]
-    robot_joints = [0,0,0,0,0,0]
-    external_axes = [0]
+    
+    robot_joints = [77.693077,
+24.465298,
+-14.839607,
+-243.163288,
+-76.203387,
+287.853996
+]
+    external_axes = [212+3500]
 
 
     # Set speed [mm/s]
