@@ -26,10 +26,10 @@ if __name__ == '__main__':
     print(robot_joints, external_axes)
 
     # Change a joint value [°]
-    robot_joints.rax_1 += 15 
+    robot_joints.rax_1 -= 45 
 
     # Set speed [mm/s]
-    speed = 100
+    speed = 300
 
     # Move robot the new pos
     done = abb.send_and_wait(rrc.MoveToJoints(robot_joints, external_axes, speed, rrc.Zone.FINE))
