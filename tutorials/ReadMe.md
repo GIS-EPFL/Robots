@@ -43,7 +43,8 @@ Track has only one direction:
 Movement type can be changed between a track and a robot.
 
 To switch between the two, follow the process below:
-![Movement](https://user-images.githubusercontent.com/18013985/225982426-9943274d-6ba0-4418-92f5-e3b444b3eeda.jpg)
+![Movement](https://user-images.githubusercontent.com/18013985/225983831-dae47ac4-ba99-40bb-8a9f-7acb6363be9a.jpg)
+
 
 There are two white buttons in the middle right of the teach:
 a) the first one allows to change the robot movement between a tool and cartesian linear axis movements
