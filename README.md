@@ -8,18 +8,12 @@
 - [ ] move rail while keeping the end effector at the same position
 - [ ] ios of robot
 - [ ] write a wish-list what to ask to Philippe
-
-
-## To-do
-
-- [ ] planning examples
-- [ ] clean up files with as much python as less grasshopper
 - [ ] custom tool tutorial for the robot studio
 
 ## Tutorials
 
 - [X] [ABB6700 + Track Connect to the robot and check a basic movement](https://github.com/GIS-EPFL/Robots/tree/main/robot_files/abb_irb_6700_track_irtb_6004)
-- [ ] [ABB6700 + Track technical specifications, teach pendant, controller](https://github.com/GIS-EPFL/Robots/tree/main/tutorials)
+- [X] [ABB6700 + Track technical specifications, teach pendant, controller](https://github.com/GIS-EPFL/Robots/tree/main/tutorials)
 - [X] https://www.le-ar-n.org/
 - [X] https://github.com/compas-teaching/COMPAS-II-FS2022
 
