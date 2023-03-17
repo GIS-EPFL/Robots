@@ -40,13 +40,14 @@ For jogging go to the following menu:
 Track has only one direction:
 ![20230209_094307](https://user-images.githubusercontent.com/18013985/225979146-65525091-7adf-4d52-9f72-df013cd666d7.jpg)
 
+Movement can be of a track or robot, to switch between the two follow the process below:
+![Movement](https://user-images.githubusercontent.com/18013985/225982426-9943274d-6ba0-4418-92f5-e3b444b3eeda.jpg)
+
 There are two white buttons in the middle right of the teach:
 a) the first one allows to change the robot movement between a tool and cartesian linear axis movements
 b) and the one below allows to move the robot axis by axis.
 
-Movement can be of a track or robot, to switch between the two follow the process below:
-![Movement](https://user-images.githubusercontent.com/18013985/225982426-9943274d-6ba0-4418-92f5-e3b444b3eeda.jpg)
-
+![MovementTypes](https://user-images.githubusercontent.com/18013985/225982691-c6d79932-86ce-4187-a432-6fc942160425.jpg)
 
 
 
