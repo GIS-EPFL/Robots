@@ -27,7 +27,7 @@ The floor, even if it is not completely flat Origin: **-700 mm**
 
 ### Turn On/Off
 
-Switch the turn on handle and plug the ethernet cable to controller and your pc
+Switch the handle and plug the ethernet cable to the controller and your pc.
 Then you should see on the teach pendant a similar view on the right side:
 
 ![on_off](https://user-images.githubusercontent.com/18013985/225984329-56f43016-a6f9-4e6f-adf7-cc0670f27ddd.jpg)
