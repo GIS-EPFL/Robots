@@ -27,11 +27,10 @@ The floor, even if it is not completely flat Origin: **-700 mm**
 
 ### Turn On/Off
 
-Switch the turn on handle and plug the ethernet cable to controller and your pc:
-![image](https://user-images.githubusercontent.com/18013985/225977833-32d66ebc-269c-40fe-b973-7d4bcf94bf56.png)
+Switch the turn on handle and plug the ethernet cable to controller and your pc
+Then you should see on the teach pendant a similar view on the right side:
 
-Then you should see this window on the teach pendant:
-![image](https://user-images.githubusercontent.com/18013985/225977969-efa4cd63-b6f5-4366-8f7c-98baa5bf42fb.png)
+![on_off](https://user-images.githubusercontent.com/18013985/225984329-56f43016-a6f9-4e6f-adf7-cc0670f27ddd.jpg)
 
 
 ### Movements: Linear | Axis | Tool
