@@ -1,3 +1,5 @@
+Last updated: 2023_03_17 by Petras Vestartas
+
 # Tutorials
 
 ## Software
@@ -43,7 +45,7 @@ Track has only one direction:
 Movement type can be changed between a track and a robot.
 
 To switch between the two, follow the process below:
-![Movement](https://user-images.githubusercontent.com/18013985/225983831-dae47ac4-ba99-40bb-8a9f-7acb6363be9a.jpg)
+![Movement](https://user-images.githubusercontent.com/18013985/225983975-a22513bc-b423-4fd5-a185-2268fb997702.jpg)
 
 
 There are two white buttons in the middle right of the teach:
