@@ -41,9 +41,7 @@ For jogging go to the following menu:
 Track has only one direction:
 ![20230209_094307](https://user-images.githubusercontent.com/18013985/225979146-65525091-7adf-4d52-9f72-df013cd666d7.jpg)
 
-Movement type can be changed between a track and a robot.
-
-To switch between the two, follow the process below:
+Movement type can be changed between a track and a robot. To switch between the two, follow the process below:
 ![Movement](https://user-images.githubusercontent.com/18013985/225983975-a22513bc-b423-4fd5-a185-2268fb997702.jpg)
 
 
