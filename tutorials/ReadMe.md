@@ -23,15 +23,27 @@ The floor, even if it is not completely flat Origin: **-700 mm**
 
 ## Teach Pendant
 
-### Create | Change Tool
+### Create Tool
+
+https://vimeo.com/809136839
 
 
-<video src="https://vimeo.com/809136839"></video>
+### Change Tool
 
-### Create WorkObject
+https://vimeo.com/809137342
 
-Temp
+### Create and Change WorkObject
 
-### Movements: Linear | Axis | Tool | Speed | Home position
+https://vimeo.com/809137450
+
+### Movements: Speed
+
+https://vimeo.com/809137684
+
+### Movements: Home position
+
+https://vimeo.com/809137558
+
+### Movements: Linear | Axis | Tool
 
 Temp
