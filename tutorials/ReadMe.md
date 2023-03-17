@@ -3,6 +3,8 @@ Last updated: 2023_03_17 by Petras Vestartas
 # Tutorials
 
 ## Software
+
+Follow the instructions below:
 - [X] [ABB6700 + Track Connect to the robot and check a basic movement](https://github.com/GIS-EPFL/Robots/tree/main/robot_files/abb_irb_6700_track_irtb_6004)
 
 ## Robot Model Technical Specifications
