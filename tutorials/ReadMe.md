@@ -45,7 +45,8 @@ a) the first one allows to change the robot movement between a tool and cartesia
 b) and the one below allows to move the robot axis by axis.
 
 Movement can be of a track or robot, to switch between the two follow the process below:
-![Movement](https://user-images.githubusercontent.com/18013985/225981787-2ade2d7d-fdf2-4a99-908f-5e71ced5df22.jpg)
+![Movement](https://user-images.githubusercontent.com/18013985/225982426-9943274d-6ba0-4418-92f5-e3b444b3eeda.jpg)
+
 
 
 
