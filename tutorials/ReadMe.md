@@ -54,7 +54,8 @@ b) and the one below allows to move the robot axis by axis.
 ![MovementTypes](https://user-images.githubusercontent.com/18013985/225982691-c6d79932-86ce-4187-a432-6fc942160425.jpg)
 
 
-
+### Default Tool - CRCL robot
+* t_RRC_Act 
 
 ### Create Tool
 
