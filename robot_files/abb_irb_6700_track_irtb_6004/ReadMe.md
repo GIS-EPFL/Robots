@@ -1,8 +1,48 @@
+# abb_irb_6700_track_irbt_6004 - Installation without the robot
+
 * Get the 💰 **compas_rrc 💰** using Anaconda prompt: 
 
 ``` bash
 conda create -c conda-forge -n robots-gis compas_rrc python=3.8
 ```
+
+# abb_irb_6700_track_irbt_6004 - Installation without the robot
+
+## How to move a robot? - Playgrounds
+
+Setup the VSCode interface:
+
+* In VSCode choose Command Prompt as a default profile (CTRL+SHIFT+P -> Terminal: Select Default Profile ) [💻](https://emojiterra.com/laptop-computer/)
+* In VSCode select the correct python environment "robots-gis" (CTRL+SHIFT+P -> Python: Select Interpreter ) [💻](https://emojiterra.com/laptop-computer/)
+* Right click on the Python code -> Run Python File in Terminal [💻](https://emojiterra.com/laptop-computer/)
+
+![1676570618033](image/ReadMe/1676570618033.png)
+
+Examples **\Robots\robot_files\abb_irb_6700_track_irtb_6004\5_playgrounds\python**
+
+* get current robot position and move by 100 mm in X-Axis **get_and_move_to_target.py**
+* get current robot position and rotate 1st axis by 15 degrees **get_and_move_to_joints.py**
+
+## Check if Docker and URDF is working
+
+* Go to folder via Visual Studio Code: **\Robots\robot_files\abb_irb_6700_track_irtb_6004\4_urdfs**
+
+* Open file and right click to compose up: **docker-compose.yml**
+
+![1676555331659](image/ReadMe/1676555331659.png)
+
+* Troubleshoot: if you have previous docker images running compose them down or use Docker desktop:
+
+![1676555395055](image/ReadMe/1676555395055.png)
+* After opening the file: **\Robots\robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irb_6700_track_irtb_6004.gh** , you should see a similar robot configuration:
+
+![1676555847046](image/ReadMe/1676555847046.png)
+
+
+
+___
+___
+___
 
 # abb_irb_6700_track_irbt_6004 - Installation with the robot
 
