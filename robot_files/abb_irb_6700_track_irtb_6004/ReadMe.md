@@ -32,9 +32,16 @@ Examples **\Robots\robot_files\abb_irb_6700_track_irtb_6004\5_playgrounds\python
 * Troubleshoot: if you have previous docker images running compose them down or use Docker desktop:
 
 ![1676555395055](image/ReadMe/1676555395055.png)
+
+
+## How to move a robot? - Playgrounds
+
 * After opening the file: **\Robots\robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irb_6700_track_irtb_6004.gh** , you should see a similar robot configuration:
 
 ![1676555847046](image/ReadMe/1676555847046.png)
+
+* also try the IK setup constrained with linear axis: 
+* **\Robots\robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irb_6700_rrc_motion_planning.gh**
 
 
 
