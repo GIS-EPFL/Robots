@@ -25,8 +25,7 @@ conda create -c conda-forge -n robots-gis compas_rrc python=3.8
 
 ![1676555847046](image/ReadMe/1676555847046.png)
 
-* also try the IK setup constrained with linear axis: 
-* **\Robots\robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irb_6700_rrc_motion_planning.gh**
+* also try the IK setup constrained with linear axis: **\Robots\robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irb_6700_rrc_motion_planning.gh**
 
 
 
