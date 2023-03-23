@@ -1,37 +1,19 @@
 # Robots in GIS
 
-## To-do for 2023-03-02
-
-- [ ] test urdfs in real with CRCL robot with an example: a) ios for the pneumatic gripper (Gregory) b) different ways of sending, c) different ways of motion
-- [ ] write a wish-list what to ask to Philippe
-- [ ] Robot Setup: start from 0,0,0 and move the robot to the center of the plane
-- [ ] Move robot axis while keeping the plane orientation the same
-- [ ] linear movement
-- [ ] find an object that represents a plane, move robot to that position, get the position in code, move robot out of tha position, then from code move the robot to the measured target, check if the result is the same
-- [ ] io's and robot studio
-
-## To-do for 2023-03-09
-
-- [ ] test grasshopper playground, start from 0,0,0 of robot and move to plane at the center of the setup
-- [ ] linear and plane-to-plane movements
-- [ ] go to position and read values, then go out of position and try to come back to the same position
-- [ ] move rail while keeping the end effector at the same position
-- [ ] ios of robot
-
 ## To-do for the next time
 
-- [ ] send multiple positions around the same points and check if it arrives in the same point, if it is the case the we need to use translation value
-
-## To-do
-
-- [ ] planning examples
-- [ ] clean up files with as much python as less grasshopper
+- [ ] update urdf so that it is not in the middle, move urdf by the translation value
+- [ ] find an object that represents a plane, move robot to that position, get the position in code, move robot out of tha position, then from code move the robot to the measured target, check if the result is the same
+- [ ] linear movements
+- [ ] move rail while keeping the end effector at the same position
+- [ ] ios of robot
+- [ ] write a wish-list what to ask to Philippe
 - [ ] custom tool tutorial for the robot studio
 
 ## Tutorials
 
 - [X] [ABB6700 + Track Connect to the robot and check a basic movement](https://github.com/GIS-EPFL/Robots/tree/main/robot_files/abb_irb_6700_track_irtb_6004)
-- [ ] [ABB6700 + Track technical specifications, teach pendant, controller](https://github.com/GIS-EPFL/Robots/tree/main/tutorials)
+- [X] [ABB6700 + Track technical specifications, teach pendant, controller](https://github.com/GIS-EPFL/Robots/tree/main/tutorials)
 - [X] https://www.le-ar-n.org/
 - [X] https://github.com/compas-teaching/COMPAS-II-FS2022
 
