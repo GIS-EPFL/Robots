@@ -6,21 +6,6 @@
 conda create -c conda-forge -n robots-gis compas_rrc python=3.8
 ```
 
-## How to move a robot? - Playgrounds
-
-Setup the VSCode interface:
-
-* In VSCode choose Command Prompt as a default profile (CTRL+SHIFT+P -> Terminal: Select Default Profile ) [💻](https://emojiterra.com/laptop-computer/)
-* In VSCode select the correct python environment "robots-gis" (CTRL+SHIFT+P -> Python: Select Interpreter ) [💻](https://emojiterra.com/laptop-computer/)
-* Right click on the Python code -> Run Python File in Terminal [💻](https://emojiterra.com/laptop-computer/)
-
-![1676570618033](image/ReadMe/1676570618033.png)
-
-Examples **\Robots\robot_files\abb_irb_6700_track_irtb_6004\5_playgrounds\python**
-
-* get current robot position and move by 100 mm in X-Axis **get_and_move_to_target.py**
-* get current robot position and rotate 1st axis by 15 degrees **get_and_move_to_joints.py**
-
 ## Check if Docker and URDF is working
 
 * Go to folder via Visual Studio Code: **Robots\robot_files\abb_irb_6700_track_irtb_6004\2_docker\**
