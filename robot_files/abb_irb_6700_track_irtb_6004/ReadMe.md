@@ -23,7 +23,7 @@ Examples **\Robots\robot_files\abb_irb_6700_track_irtb_6004\5_playgrounds\python
 
 ## Check if Docker and URDF is working
 
-* Go to folder via Visual Studio Code: **\Robots\robot_files\abb_irb_6700_track_irtb_6004\4_urdfs**
+* Go to folder via Visual Studio Code: **Robots\robot_files\abb_irb_6700_track_irtb_6004\2_docker\**
 
 * Open file and right click to compose up: **docker-compose.yml**
 
