@@ -6,8 +6,6 @@
 conda create -c conda-forge -n robots-gis compas_rrc python=3.8
 ```
 
-# abb_irb_6700_track_irbt_6004 - Installation without the robot
-
 ## How to move a robot? - Playgrounds
 
 Setup the VSCode interface:
