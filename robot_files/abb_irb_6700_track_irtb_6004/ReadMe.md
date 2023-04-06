@@ -12,7 +12,8 @@ conda create -c conda-forge -n robots-gis compas_rrc python=3.8
 
 * Open file and right click to compose up: **docker-compose.yml**
 
-![1676555331659](image/ReadMe/1676555331659.png)
+![image](https://user-images.githubusercontent.com/18013985/230327108-5f7895be-fdbf-498e-9bbb-403718a3d280.png)
+
 
 * Troubleshoot: if you have previous docker images running compose them down or use Docker desktop:
 
