@@ -10,6 +10,11 @@
 - [ ] write a wish-list what to ask to Philippe
 - [ ] custom tool tutorial for the robot studio
 
+## Playground
+- [ ] attach tool
+- [ ] send multiple planes, by converting the grashopper to python code
+
+
 ## Tutorials
 
 - [X] [ABB6700 + Track Connect to the robot and check a basic movement](https://github.com/GIS-EPFL/Robots/tree/main/robot_files/abb_irb_6700_track_irtb_6004)
