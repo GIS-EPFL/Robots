@@ -71,7 +71,8 @@ conda create -c conda-forge -n robots-gis compas_rrc python=3.8
 
 * In VSCode right click "compose-up", while the docker-compose.yml. Before doing that, be sure that previous docker instances are composed down [💻](https://emojiterra.com/laptop-computer/) use this file: **\Robots\robot_files\abb_irb_6700_track_irtb_6004\2_docker\docker-compose.yml** :
 
-![1676559455567](image/ReadMe/1676559455567.png)
+![image](https://user-images.githubusercontent.com/18013985/230327888-c4299625-6dfe-4189-922d-52d7f0b1467e.png)
+
 
 * In teach pendant [🎮](https://emojipedia.org/video-game/)  this window must change to the next image [🎮](https://emojipedia.org/video-game/)  :
 
