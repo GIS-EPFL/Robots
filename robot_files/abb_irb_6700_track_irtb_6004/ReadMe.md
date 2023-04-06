@@ -8,7 +8,7 @@ conda create -c conda-forge -n robots-gis compas_rrc python=3.8
 
 ## Check if Docker and URDF is working
 
-* Go to folder via Visual Studio Code: **Robots\robot_files\abb_irb_6700_track_irtb_6004\2_docker\**
+* Go to folder via Visual Studio Code: **Robots\robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\**
 
 * Open file and right click to compose up: **docker-compose.yml**
 
