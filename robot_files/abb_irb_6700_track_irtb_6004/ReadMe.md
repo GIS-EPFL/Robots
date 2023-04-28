@@ -26,7 +26,7 @@ conda create -c conda-forge -n robots-gis compas_rrc python=3.8
 
 Step 6 - Install compas packages for rhino:
 ``` bash
-python -m compas_rhino.install
+python -m compas_rhino.install -v 7.0
 ```
 
 Step 6 - install **VSCode** (https://code.visualstudio.com/download)
