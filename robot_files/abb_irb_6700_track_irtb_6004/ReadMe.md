@@ -1,16 +1,16 @@
 # Software Installation (If you never used Anaconda, VSCode or Git):
 
-Step 0 - Install Docker (https://www.docker.com/products/docker-desktop)
+Step 0 - Install **Docker** (https://www.docker.com/products/docker-desktop)
 
-Step 1 - Install git (https://git-scm.com/downloads)
+Step 1 - Install **Git** (https://git-scm.com/downloads)
 
-Step 2 - Install “Anaconda” (https://www.anaconda.com/products/distribution) and install it, during installation mark the option to add the path to the environment variables:
+Step 2 - Install **Anaconda** (https://www.anaconda.com/products/distribution) and install it, during installation mark the option to add the path to the environment variables:
 
 ![image](https://user-images.githubusercontent.com/18013985/235167108-89cec43c-6466-4dea-92e8-dc3d04af5361.png)
 
 
 
-Step 3 - run the “Anacond Prompt” terminal using Administrative rights
+Step 3 - run the **Anacond Prompt** terminal using Administrative rights
 
 Step 4 - update conda
 
@@ -29,7 +29,7 @@ Step 6 - Install compas packages for rhino:
 python -m compas_rhino.install
 ```
 
-Step 6 - install VSCode (https://code.visualstudio.com/download)
+Step 6 - install **VSCode** (https://code.visualstudio.com/download)
 
 Step 7 - install **Python** and **Docker** extensions in VScode
 ![image](https://user-images.githubusercontent.com/18013985/235159550-837b8401-9a11-46fa-8e37-899f6ec4dff0.png)
