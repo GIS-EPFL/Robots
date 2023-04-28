@@ -1,3 +1,37 @@
+# Software Installation (If you never used Anaconda, VSCode or Git):
+
+Step 1 - Install git (https://git-scm.com/downloads)
+
+Step 2 - download “Anaconda” (https://www.anaconda.com/products/distribution) and install it, during installation mark the option to add the path to the environment variables.
+
+Step 3 - run the “Anacond Prompt” terminal using Administrative rights
+
+Step 4 - update conda
+
+``` bash
+conda config --add channels conda-forge
+```
+
+Step 5 - using Anaconda Prompt write a series commands to create an environment:
+
+``` bash
+conda create -c conda-forge -n robots-gis compas_rrc python=3.8
+```
+Step 6 - install VSCode (https://code.visualstudio.com/download)
+
+Step 7 - install Python extension in VScode
+![image](https://user-images.githubusercontent.com/18013985/235159550-837b8401-9a11-46fa-8e37-899f6ec4dff0.png)
+
+Step 8 - change default terminal to “Command Line”, type “Ctrl+Shift+P” and type “Select Default Shell” and select “Command Line”
+
+![image](https://user-images.githubusercontent.com/18013985/235159865-b83d4784-eeb7-45fa-a34a-ca6012c130f2.png)
+
+Step 9 - change the environment to “robots-gis”, type “Ctrl+Shift+P” and type “Python: Select Interpreter” and select “wood-dev”. Finally go to tests folder, open any file, right click on the canvas and click “Run Python file in Terminal”
+
+
+
+
+
 # abb_irb_6700_track_irbt_6004 - Installation without the robot
 
 * Get the 💰 **compas_rrc 💰** using Anaconda prompt: 
