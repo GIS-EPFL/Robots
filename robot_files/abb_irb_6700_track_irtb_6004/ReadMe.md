@@ -50,7 +50,9 @@ Step 9 - change the environment to “robots-gis”, type “Ctrl+Shift+P” and
 Step 10 - Open the folder of the "Robots" cloned from github on Visual Studio Code:
 ![image](https://user-images.githubusercontent.com/18013985/235192476-16b3d1d1-3109-428b-aee1-e3ae25fd0edb.png)
 
+Step11 - Open Docker for the first time and install WSL if needed:
 
+![image](https://user-images.githubusercontent.com/18013985/235193412-b973f27d-171c-482a-b685-b184a8b0aa98.png)
 
 
 # abb_irb_6700_track_irbt_6004 - Installation without the robot
