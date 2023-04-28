@@ -1,5 +1,7 @@
 # Software Installation (If you never used Anaconda, VSCode or Git):
 
+Step 0 - Install Docker (https://www.docker.com/products/docker-desktop)
+
 Step 1 - Install git (https://git-scm.com/downloads)
 
 Step 2 - Install “Anaconda” (https://www.anaconda.com/products/distribution) and install it, during installation mark the option to add the path to the environment variables:
@@ -21,9 +23,15 @@ Step 5 - using Anaconda Prompt write a series commands to create an environment:
 ``` bash
 conda create -c conda-forge -n robots-gis compas_rrc python=3.8
 ```
+
+Step 6 - Install compas packages for rhino:
+``` bash
+python -m compas_rhino.install
+```
+
 Step 6 - install VSCode (https://code.visualstudio.com/download)
 
-Step 7 - install Python extension in VScode
+Step 7 - install **Python** and **Docker** extensions in VScode
 ![image](https://user-images.githubusercontent.com/18013985/235159550-837b8401-9a11-46fa-8e37-899f6ec4dff0.png)
 
 Step 8 - change default terminal to “Command Line”, type “Ctrl+Shift+P” and type “Select Default Shell” and select “Command Line”
