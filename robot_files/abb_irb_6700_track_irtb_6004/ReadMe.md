@@ -2,7 +2,9 @@
 
 Step 1 - Install git (https://git-scm.com/downloads)
 
-Step 2 - download “Anaconda” (https://www.anaconda.com/products/distribution) and install it, during installation mark the option to add the path to the environment variables.
+Step 2 - Install “Anaconda” (https://www.anaconda.com/products/distribution) and install it, during installation mark the option to add the path to the environment variables:
+![image](https://user-images.githubusercontent.com/18013985/235166847-629b5a7b-ea73-4fa2-adeb-a57814eed8e1.png)
+
 
 Step 3 - run the “Anacond Prompt” terminal using Administrative rights
 
