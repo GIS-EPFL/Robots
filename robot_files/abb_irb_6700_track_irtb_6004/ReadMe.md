@@ -2,7 +2,12 @@
 
 Step 0 - Install **Docker** (https://www.docker.com/products/docker-desktop)
 
-Step 1 - Install **Git** (https://git-scm.com/downloads)
+Step 1 - Install **Git** (https://git-scm.com/downloads) and clone the robots-gis repository using terminal or unzip it from usb file: 
+
+``` bash
+git clone https://github.com/GIS-EPFL/Robots.git
+```
+
 
 Step 2 - Install **Anaconda** (https://www.anaconda.com/products/distribution) and install it, during installation mark the option to add the path to the environment variables:
 
