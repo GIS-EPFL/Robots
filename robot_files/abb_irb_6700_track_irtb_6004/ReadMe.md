@@ -39,7 +39,7 @@ Step 6 - install **VSCode** (https://code.visualstudio.com/download)
 Step 7 - install **Python** and **Docker** extensions in VScode
 ![image](https://user-images.githubusercontent.com/18013985/235159550-837b8401-9a11-46fa-8e37-899f6ec4dff0.png)
 
-Step 8 - change default terminal to “Command Line”, type “Ctrl+Shift+P” and type “Select Default Shell” and select “Command Line”
+Step 8 - change default terminal to “Command Line”, type “Ctrl+Shift+P” and type “Select Default Shell” and select “Command Prompt”
 
 ![image](https://user-images.githubusercontent.com/18013985/235159865-b83d4784-eeb7-45fa-a34a-ca6012c130f2.png)
 
