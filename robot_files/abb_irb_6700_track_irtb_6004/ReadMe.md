@@ -47,6 +47,9 @@ Step 9 - change the environment to “robots-gis”, type “Ctrl+Shift+P” and
 
 ![image](https://user-images.githubusercontent.com/18013985/235191613-44f20007-1677-4905-8879-6c109f98581a.png)
 
+Step 10 - Open the folder of the "Robots" cloned from github on Visual Studio Code:
+![image](https://user-images.githubusercontent.com/18013985/235192476-16b3d1d1-3109-428b-aee1-e3ae25fd0edb.png)
+
 
 
 
