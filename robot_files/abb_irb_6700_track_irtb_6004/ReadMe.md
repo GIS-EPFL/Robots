@@ -45,6 +45,7 @@ Step 8 - change default terminal to “Command Line”, type “Ctrl+Shift+P” 
 
 Step 9 - change the environment to “robots-gis”, type “Ctrl+Shift+P” and type “Python: Select Interpreter” and select “wood-dev”. Finally go to tests folder, open any file, right click on the canvas and click “Run Python file in Terminal”
 
+![image](https://user-images.githubusercontent.com/18013985/235191613-44f20007-1677-4905-8879-6c109f98581a.png)
 
 
 
