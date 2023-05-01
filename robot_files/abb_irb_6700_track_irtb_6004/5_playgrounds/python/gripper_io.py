@@ -12,47 +12,10 @@ if __name__ == '__main__':
 
     # Print text on FlexPenant
     done = abb.send_and_wait(rrc.PrintText('Welcome to COMPAS_RRC'))
-    """
-    # Set tool
-    abb.send(rrc.SetTool('tool0'))
-
-    # Set work object
-    abb.send(rrc.SetWorkObject('wobj0'))
-
-    # Read value of joints
-    robot_joints, external_axes = abb.send_and_wait(rrc.GetJoints())
-
-    # Print received values
-    print(robot_joints, external_axes)
-
-    # Change a joint value [°]
     
-    robot_joints = [77.693077,
-24.465298,
--14.839607,
--243.163288,
--76.203387,
-287.853996
-]
-    external_axes = [212+3500]
-
-
-    # Set speed [mm/s]
-    speed = 100
-
-    # Move robot the new pos
-    #done = abb.send_and_wait(rrc.MoveToJoints(robot_joints, external_axes, speed, rrc.Zone.FINE))
-
-    # Print feedback 
-    print('Feedback = ', done)
-
-    # End of Code
-    print('Finished')
-    """
-
     #io test
     print('light_in')
-    abb.send_and_wait(rrc.SetDigital('Local_IO_0_DO1', 1), timeout=5)
+    abb.send_and_wait(rrc.SetDigital('Local_IO_0_DO1', 0), timeout=5)
     abb.send_and_wait(rrc.WaitTime(1))
     print('light')
     # Close client
