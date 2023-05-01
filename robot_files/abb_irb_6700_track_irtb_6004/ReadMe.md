@@ -32,6 +32,7 @@ conda create -c conda-forge -n robots-gis compas_rrc python=3.8
 Step 6 - Install compas packages for rhino:
 ``` bash
 conda install COMPAS
+conda activate robots-gis
 python -m compas_rhino.install -v 7.0
 ```
 
