@@ -1,3 +1,62 @@
+# Software Installation (If you never used Anaconda, VSCode or Git):
+
+Step 0 - Install **Docker** (https://www.docker.com/products/docker-desktop)
+
+Step 1 - Install **Git** (https://git-scm.com/downloads) and clone the robots-gis repository using terminal or unzip it from usb file: 
+
+``` bash
+git clone https://github.com/GIS-EPFL/Robots.git
+```
+
+
+Step 2 - Install **Anaconda** (https://www.anaconda.com/products/distribution) and install it, during installation mark the option to add the path to the environment variables:
+
+![image](https://user-images.githubusercontent.com/18013985/235167108-89cec43c-6466-4dea-92e8-dc3d04af5361.png)
+
+
+
+Step 3 - run the **Anacond Prompt** terminal using Administrative rights
+
+Step 4 - update conda
+
+``` bash
+conda config --add channels conda-forge
+```
+
+Step 5 - using Anaconda Prompt write a series commands to create an environment:
+
+``` bash
+conda create -c conda-forge -n robots-gis compas_rrc python=3.8
+```
+
+Step 6 - Install compas packages for rhino:
+``` bash
+conda install COMPAS
+conda activate robots-gis
+python -m compas_rhino.install -v 7.0
+```
+
+Step 6 - install **VSCode** (https://code.visualstudio.com/download)
+
+Step 7 - install **Python** and **Docker** extensions in VScode
+![image](https://user-images.githubusercontent.com/18013985/235159550-837b8401-9a11-46fa-8e37-899f6ec4dff0.png)
+
+Step 8 - change default terminal to “Command Line”, type “Ctrl+Shift+P” and type “Select Default Shell” and select “Command Prompt”
+
+![image](https://user-images.githubusercontent.com/18013985/235159865-b83d4784-eeb7-45fa-a34a-ca6012c130f2.png)
+
+Step 9 - change the environment to “robots-gis”, type “Ctrl+Shift+P” and type “Python: Select Interpreter” and select “wood-dev”. Finally go to tests folder, open any file, right click on the canvas and click “Run Python file in Terminal”
+
+![image](https://user-images.githubusercontent.com/18013985/235191613-44f20007-1677-4905-8879-6c109f98581a.png)
+
+Step 10 - Open the folder of the "Robots" cloned from github on Visual Studio Code:
+![image](https://user-images.githubusercontent.com/18013985/235192476-16b3d1d1-3109-428b-aee1-e3ae25fd0edb.png)
+
+Step11 - Open Docker for the first time and install WSL if needed:
+
+![image](https://user-images.githubusercontent.com/18013985/235193412-b973f27d-171c-482a-b685-b184a8b0aa98.png)
+
+
 # abb_irb_6700_track_irbt_6004 - Installation without the robot
 
 * Get the 💰 **compas_rrc 💰** using Anaconda prompt: 

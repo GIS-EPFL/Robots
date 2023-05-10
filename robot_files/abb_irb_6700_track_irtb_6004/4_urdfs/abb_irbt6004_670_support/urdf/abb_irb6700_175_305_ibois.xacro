@@ -7,7 +7,8 @@
   <joint name="world_joint" type="fixed">
       <parent link="world" />
       <child link = "rob1_axis" />
-      <origin xyz="0 0.0 0.0" rpy="0.0 0.0 3.14159265358979323846" /> 
+      <!--<origin xyz="0 0.0 0.0" rpy="0.0 0.0 3.14159265358979323846" />-->
+      <origin xyz="0 0.0 0.0" rpy="-0.00031264124506612164 -0.00031250271915146547 0.0004431808433690596" /> <!--Update for the base frame of the track -->
   </joint>
 
   <xacro:abb_irb6700_175_305_ibois prefix="rob1_" />

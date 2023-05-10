@@ -5,8 +5,8 @@
   <description>
      An automatically generated package with all the configuration and launch files for using the abb_irb6700_175_305_ibois with the MoveIt Motion Planning Framework
   </description>
-  <author email="petras.vestartas@epfl.ch">petras vestartas</author>
-  <maintainer email="petras.vestartas@epfl.ch">petras vestartas</maintainer>
+  <author email="jingwen.wang@epfl.ch">XX</author>
+  <maintainer email="jingwen.wang@epfl.ch">XX</maintainer>
 
   <license>BSD</license>
 
@@ -19,7 +19,7 @@
   <run_depend>moveit_ros_move_group</run_depend>
   <run_depend>moveit_fake_controller_manager</run_depend>
   <run_depend>moveit_kinematics</run_depend>
-  <run_depend>moveit_planners_ompl</run_depend>
+  <run_depend>moveit_planners</run_depend>
   <run_depend>moveit_ros_visualization</run_depend>
   <run_depend>moveit_setup_assistant</run_depend>
   <run_depend>moveit_simple_controller_manager</run_depend>
