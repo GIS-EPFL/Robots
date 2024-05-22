@@ -20,7 +20,7 @@ services:
       - abb_irbt6004_670_tworobots_moveit_config
       - demo.launch
       # To launch the RVIZ GUI, change the following to true
-      - use_rviz:=true
+      - use_rviz:=false
       - pipeline:=ompl
 
   # moveit-service-setup-assistant:
