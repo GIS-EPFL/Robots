@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:macro name="abb_irb6700_175_305_ibois" params="prefix" >
+  <xacro:include filename="$(find abb_resources)/urdf/common_materials.xacro"/>
+  <xacro:include filename="$(find abb_irb6700_support)/urdf/irb6700_175_305_macro.xacro"/>
+  <xacro:include filename="$(find abb_irbt6004_670_moveit_config)/urdf/abb_irbt6004_670.xacro"/>
+
+
+
+  <xacro:abb_irbt6004_670 prefix="${prefix}" />
+  
+  <joint name="${prefix}abb_joint" type="fixed">
+    <parent link="${prefix}pedestal"/>
+    <child  link="${prefix}base_link"/>
+    <origin xyz="0 0 0 " rpy="0 0 1.57079632679489661923 "/> <!--rotation of robot pedestal 3.14159265358979323846 1.57079632679489661923-->
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+
+  <xacro:abb_irb6700_175_305 prefix="${prefix}"/><!--for multiple robots-->
+  </xacro:macro>
+</robot>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="big_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find abb_irbt6004_670_support)/urdf/abb_irb6700_175_305_ibois_macro.xacro"/>
+  
+  <link name="world" />
+
+  <joint name="world_joint" type="fixed">
+      <parent link="world" />
+      <child link = "rob1_axis" />
+      <!--<origin xyz="0 0.0 0.0" rpy="0.0 0.0 3.14159265358979323846" />-->
+      <origin xyz="0 0.0 0.0" rpy="0.0006690539774448019 0.000669029972214783 0.00003588000859488913" /> <!--Update for the base frame of the track -->
+  </joint>
+
+  <xacro:abb_irb6700_175_305_ibois prefix="rob1_" />
+</robot>

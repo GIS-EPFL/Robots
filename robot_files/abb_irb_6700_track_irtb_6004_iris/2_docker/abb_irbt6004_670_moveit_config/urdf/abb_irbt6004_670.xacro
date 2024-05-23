@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:macro name="abb_irbt6004_670" params="prefix">
+    <link name="${prefix}axis">
+      <inertial>
+        <mass value="120"/>
+        <inertia ixx="-4.98000" iyy="-5.95200" izz="0.82800" ixy="-0.00000" ixz="2.70000" iyz="-0.00000"/>
+      </inertial>
+      <visual>
+        <origin xyz="3.35 0.0 0.0" />
+        <geometry>
+          <mesh filename="package://abb_irbt6004_670_moveit_config/meshes/abb_irbt6004_670/visual/axis.stl"/>
+        </geometry>
+        <xacro:material_abb_white />
+      </visual>
+      <collision>
+        <origin xyz="3.35 0.0 0.0"/>
+        <geometry>
+          <mesh filename="package://abb_irbt6004_670_moveit_config/meshes/abb_irbt6004_670/collision/axis.stl"/>
+        </geometry>
+      </collision>
+    </link>
+  
+    <joint name="${prefix}linear_axis_joint" type="prismatic">
+      <parent link="${prefix}axis"/>
+      <child  link="${prefix}pedestal"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <!--track origin or translation from origin-->
+      <axis   xyz="1 0 0"/>
+      <limit lower="0" upper="6.700" effort="100000" velocity="2.618" />  <!--track limits or length-->
+      <dynamics damping="0.2" friction="0" />
+    </joint>
+
+    <link name="${prefix}pedestal">
+      <inertial>
+        <origin xyz="0.0 0.0 0.0"/>
+        <mass value="120.00000"/>
+        <inertia ixx="-4.98000" iyy="-5.95200" izz="0.82800" ixy="-0.00000" ixz="2.70000" iyz="-0.00000"/>
+      </inertial>
+      <visual>
+        <geometry>
+          <mesh filename="package://abb_irbt6004_670_moveit_config/meshes/abb_irbt6004_670/visual/pedestal_250.stl"/>
+        </geometry>
+        <xacro:material_abb_white />
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://abb_irbt6004_670_moveit_config/meshes/abb_irbt6004_670/collision/pedestal_250.stl"/>
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+</robot>

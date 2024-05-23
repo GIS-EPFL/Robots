@@ -1,0 +1,23 @@
+controller_list:
+  - name: fake_manipulator_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - rob1_joint_1
+      - rob1_joint_2
+      - rob1_joint_3
+      - rob1_joint_4
+      - rob1_joint_5
+      - rob1_joint_6
+  - name: fake_arm_track_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - rob1_linear_axis_joint
+      - rob1_joint_1
+      - rob1_joint_2
+      - rob1_joint_3
+      - rob1_joint_4
+      - rob1_joint_5
+      - rob1_joint_6
+initial:  # Define initial robot poses per group
+  - group: manipulator
+    pose: home
