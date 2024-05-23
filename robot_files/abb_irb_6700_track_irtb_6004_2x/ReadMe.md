@@ -2,7 +2,7 @@
 
 ## Tool calibration
 
-- How to use the camera system
+- How to use the calibration camera system
 - Robot controller - jogging - tool - new - define - 4 point
 <img width="574" alt="ToolCalibration" src="https://github.com/GIS-EPFL/Robots/assets/91248123/0bf19fa6-5085-4f98-b4f1-1806e2da1735">
 
