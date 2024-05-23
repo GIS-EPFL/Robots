@@ -3,10 +3,10 @@
   <name>abb_irbt6004_670_moveit_config</name>
   <version>0.3.0</version>
   <description>
-     An automatically generated package with all the configuration and launch files for using the abb_irb6700_175_305_ibois with the MoveIt Motion Planning Framework
+     An automatically generated package with all the configuration and launch files for using the aurora with the MoveIt Motion Planning Framework
   </description>
-  <author email="jingwen.wang@epfl.ch">XX</author>
-  <maintainer email="jingwen.wang@epfl.ch">XX</maintainer>
+  <author email="jingwen.wang@epfl.ch">Jingwen Wang</author>
+  <maintainer email="jingwen.wang@epfl.ch">Jingwen Wang</maintainer>
 
   <license>BSD</license>
 
@@ -35,7 +35,7 @@
   <!-- <run_depend>gazebo_ros_control</run_depend> -->
   <!-- This package is referenced in the warehouse launch files, but does not build out of the box at the moment. Commented the dependency until this works. -->
   <!-- <run_depend>warehouse_ros_mongo</run_depend> -->
-  <run_depend>abb_irbt6004_670_support</run_depend>
+  <!-- <run_depend>abb_irbt6004_670_support</run_depend> -->
 
 
 </package>

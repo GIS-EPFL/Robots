@@ -9,14 +9,14 @@
       <visual>
         <origin xyz="3.35 0.0 0.0" />
         <geometry>
-          <mesh filename="package://abb_irbt6004_670_support/meshes/abb_irbt6004_670/visual/axis.stl"/>
+          <mesh filename="package://abb_irbt6004_670_moveit_config/meshes/abb_irbt6004_670/visual/axis.stl"/>
         </geometry>
         <xacro:material_abb_white />
       </visual>
       <collision>
         <origin xyz="3.35 0.0 0.0"/>
         <geometry>
-          <mesh filename="package://abb_irbt6004_670_support/meshes/abb_irbt6004_670/collision/axis.stl"/>
+          <mesh filename="package://abb_irbt6004_670_moveit_config/meshes/abb_irbt6004_670/collision/axis.stl"/>
         </geometry>
       </collision>
     </link>
@@ -38,13 +38,13 @@
       </inertial>
       <visual>
         <geometry>
-          <mesh filename="package://abb_irbt6004_670_support/meshes/abb_irbt6004_670/visual/pedestal_250.stl"/>
+          <mesh filename="package://abb_irbt6004_670_moveit_config/meshes/abb_irbt6004_670/visual/pedestal_250.stl"/>
         </geometry>
         <xacro:material_abb_white />
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://abb_irbt6004_670_support/meshes/abb_irbt6004_670/collision/pedestal_250.stl"/>
+          <mesh filename="package://abb_irbt6004_670_moveit_config/meshes/abb_irbt6004_670/collision/pedestal_250.stl"/>
         </geometry>
       </collision>
     </link>

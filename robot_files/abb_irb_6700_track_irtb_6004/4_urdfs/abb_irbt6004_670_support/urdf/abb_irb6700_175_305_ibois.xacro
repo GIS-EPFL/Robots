@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot name="abb_irb6700_175_305_ibois" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="aurora" xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:include filename="$(find abb_irbt6004_670_support)/urdf/abb_irb6700_175_305_ibois_macro.xacro"/>
 
   <link name="world" />

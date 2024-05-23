@@ -9,7 +9,7 @@
   <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="xacro  '$(find abb_irbt6004_670_support)/urdf/abb_irb6700_175_305_ibois.xacro'"/>
 
   <!-- The semantic description that corresponds to the URDF -->
-  <param name="$(arg robot_description)_semantic" textfile="$(find abb_irbt6004_670_moveit_config)/config/abb_irb6700_175_305_ibois.srdf" />
+  <param name="$(arg robot_description)_semantic" textfile="$(find abb_irbt6004_670_moveit_config)/config/aurora.srdf" />
 
   <!-- Load updated joint limits (override information from URDF) -->
   <group ns="$(arg robot_description)_planning">

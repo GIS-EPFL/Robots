@@ -1,26 +1,7 @@
-# Moveit Planning + RRC drive with real robot
-version: '3'
+version: '2'
 services:
-  abb-driver:
-    image: gramaziokohler/ros-noetic-dfab:22.05
-    container_name: abb-driver
-    environment:
-      - ROS_HOSTNAME=abb-driver
-      - ROS_MASTER_URI=http://ros-core:11311
-    depends_on:
-      - ros-core
-    command:
-      - roslaunch
-      - --wait
-      - compas_rrc_driver
-      - bringup.launch
-      - robot_ip:=192.168.125.1
-      - robot_streaming_port:=30101
-      - robot_state_port:=30201
-      - namespace:=rob1
-
   moveit-service:
-    image: gramaziokohler/ros-noetic-dfab:22.05
+    image: gramaziokohler/ros-noetic-moveit
     container_name: moveit-service
     environment:
       - ROS_HOSTNAME=moveit-service
@@ -42,7 +23,7 @@ services:
       - pipeline:=ompl
 
   ros-core:
-    image: gramaziokohler/ros-noetic-dfab:22.05
+    image: gramaziokohler/ros-noetic-moveit
     container_name: ros-core
     ports:
       - "11311:11311"
@@ -50,7 +31,7 @@ services:
       - roscore
 
   ros-bridge:
-    image: gramaziokohler/ros-noetic-dfab:22.05
+    image: gramaziokohler/ros-noetic-moveit
     container_name: ros-bridge
     environment:
       - "ROS_HOSTNAME=ros-bridge"
@@ -64,10 +45,9 @@ services:
       - --wait
       - rosbridge_server
       - rosbridge_websocket.launch
-      - unregister_timeout:=28800 # This horribly long timeout of 8 hours is to workaround this issue: https://github.com/RobotWebTools/rosbridge_suite/issues/138
 
   ros-fileserver:
-    image: gramaziokohler/ros-noetic-dfab:22.05
+    image: gramaziokohler/ros-noetic-moveit
     container_name: ros-fileserver
     environment:
       - ROS_HOSTNAME=ros-fileserver

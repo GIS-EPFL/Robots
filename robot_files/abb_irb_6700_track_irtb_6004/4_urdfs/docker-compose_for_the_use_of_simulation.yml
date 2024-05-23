@@ -20,7 +20,7 @@ services:
       - abb_irbt6004_670_moveit_config
       - demo.launch
       # To launch the RVIZ GUI, change the following to true
-      - use_rviz:=true
+      - use_rviz:=false
       - pipeline:=ompl
 
   # # to create configuration uncomment the following lines
@@ -36,11 +36,9 @@ services:
   #   depends_on:
   #     - ros-core
   #   volumes:
-  #     - ../abb_experimental:/root/catkin_ws/src/abb_experimental
-  #     - ../abb_irb6700_175_305_moveit_config:/root/catkin_ws/src/abb_irb6700_175_305_moveit_config
+  #     - ../../abb_experimental:/root/catkin_ws/src/abb_experimental
   #     - ./abb_irbt6004_670_support:/root/catkin_ws/src/abb_irbt6004_670_support
   #     - ./abb_irbt6004_670_moveit_config:/root/catkin_ws/src/abb_irbt6004_670_moveit_config
-  #     - ./abb_irbt6004_670_tworobots_moveit_config:/root/catkin_ws/src/abb_irbt6004_670_tworobots_moveit_config
   #   command:
   #     - roslaunch
   #     - --wait

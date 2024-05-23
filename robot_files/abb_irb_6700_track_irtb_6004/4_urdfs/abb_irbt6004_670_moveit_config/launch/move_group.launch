@@ -77,7 +77,7 @@
 
   <!-- Sensors Functionality -->
   <include ns="move_group" file="$(dirname)/sensor_manager.launch.xml" if="$(arg allow_trajectory_execution)">
-    <arg name="moveit_sensor_manager" value="abb_irb6700_175_305_ibois" />
+    <arg name="moveit_sensor_manager" value="aurora" />
   </include>
 
   <!-- Start the actual move_group node/action server -->
