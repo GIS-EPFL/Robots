@@ -4,6 +4,7 @@
 
 - How to use the camera system
 - Robot controller - jogging - tool - new - define - 4 point
+<img width="574" alt="ToolCalibration" src="https://github.com/GIS-EPFL/Robots/assets/91248123/0bf19fa6-5085-4f98-b4f1-1806e2da1735">
 
 ## Track calibration / Axis calibration
 
@@ -13,6 +14,7 @@
 ## Update in URDF
 
 - From Robotstudio to get quaternion
+![robotstudio_axis_calibration](https://github.com/GIS-EPFL/Robots/assets/91248123/9a07bf4c-0c0c-4dae-9579-f0b5070a409d)
 - from quaternion to Euler angles 
 - from Euler angles to URDF
 
