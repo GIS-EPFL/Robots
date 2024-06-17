@@ -23,7 +23,10 @@
 ## 8 Point calibration method
 
 - Finish single robot axis calibration
+  Follow the steps above to calibrate the linear axis for each of the robots you want to use collaboratively.
 - Set tool as the pintool, set coordinate system to base
+  Mount the "pin" on the robot and set the respective tool with the teach pendant on each robot. For the iRB 6700s robots at GIS there are the following tools available and their respective tools defined as seen in the pictures below.
+  [PICS HERE]
 - Reach the same 8 points 
 - Calculate transformation matrix 
 - Update URDF
