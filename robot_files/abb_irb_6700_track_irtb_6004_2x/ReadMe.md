@@ -22,9 +22,15 @@
 
 ## 8 Point calibration method
 
-- Finish single robot axis calibration
-- Set tool as the pintool, set coordinate system to base
-- Reach the same 8 points 
+1. Finish the axis calibration for each robot you want to use collaboratively as described in the steps above.
+2. Mount a "pin tool" on each robot so you can measure the points accurately. There are two pins available in GIS that you can use.
+
+3. Set tool as the corresponding pintool (e.g. screwPin for the threaded pin, or pencil for the wooden pencil in the picture)
+4. Set coordinate system to base
+5. Get the precision camera and the laptop that contains the software from CRCL. This is a custom equipment with two micro cameras to help you reach the same point with the two robots precisely.
+6. Consider 8 points that you want to measure with the two robots. Keep in mind that in the area where the 8 points are measured the urdf will be most accurate, so try to disperse them in the area of reach of both robots.
+7. For each point you place this camera at jog one robot first in place until you see the tip well in the target area. Write down the position of the robot at that point. Repeat for the second robot. Move to the next point until you have measured all 8 points with both robots.
+8. 
 - Calculate transformation matrix 
 - Update URDF
 - Calculate transformation matrix considering track calibration (quaternion)
