@@ -8,15 +8,13 @@ TCP calibration is the process through which the user defines where in space the
 1. Install the tool securely on the robot's flange or mounting plate
 2. Select the tool calibration method
 
-  (a) **Manual** - _using a fixed object or calibration plate_
+  **Manual Calibration is what we use here at the GIS** - _using a fixed object or calibration plate_
       - Move the robot to several different positions (depending on if 3 or 4-point calibration is used)
       - Record the position data from the robot's controller
       - Use the recorded positions to compute the TCP using geometric algorithms
     
-  (b) **Automatic** - _using sensors or dedicated tools_
-      - Robot controller automatically records the position and orientation data from the sensor or camera
-      - Use the software to compute the TCP based on the sensor feedback
-4. Record and save the TCP position in the robot controller
+3. Record and save the TCP position in the robot controller
+4. Declare the new tool as current **add images - Alex**
 
 **Common Challenges:**
 - Accuracy: Ensuring that the recorded positions are accurate and free from errors
@@ -35,7 +33,7 @@ OUTSTANDING
 
 ## Track calibration / Axis calibration
 
-Track calibration should be done only after tool calibration (above). The robot's external linear track can be a useful tool to extend the reach and capabilities of the system. This is the process through which a robot's external linear track / rail is calibrated to ensure accurate positioning and movement. 
+Track calibration has been completed for GIS robot set-up, and should not normally need to be changed or adjusted. It should only be redone if completely necessary, and only after speaking with one of the individuals managing this repo (Jingwen Wang, Marirena Kladeftira, Joseph Tannous, or Alexandra Pittiglio)! The robot's external linear track can be a useful tool to extend the reach and capabilities of the system. This is the process through which a robot's external linear track / rail is calibrated to ensure accurate positioning and movement. 
 
 **STEP-BY-STEP:**
 Main menu --> Calibration --> Track --> Base Frame --> 3-points --> Modify Position (REPEAT 3 TIMES) --> Save Positions
