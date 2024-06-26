@@ -30,7 +30,7 @@ Robot controller --> Jogging --> Tool --> New --> Define --> 4 point
 
 OUTSTANDING
 -------
-- How to use the calibration camera system from IBOIS
+- How to use the calibration camera system from IBOIS -- spoke to Andreas regarding this, currently requesting information and contact info from Gilles and Petras for the calibration consultants that came in
 
 
 ## Track calibration / Axis calibration
