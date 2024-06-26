@@ -7,30 +7,39 @@ Prior to calibration, the tool centre point (TCP) defaults to the centre point o
 TCP calibration is the process through which the user defines where in space the Tool Centre Point is with respect to the base coordinate system of the robot. Generally, the process includes the following steps:
 1. Install the tool securely on the robot's flange or mounting plate
 2. Select the tool calibration method
+
   (a) **Manual** - _using a fixed object or calibration plate_
       - Move the robot to several different positions (depending on if 3 or 4-point calibration is used)
       - Record the position data from the robot's controller
       - Use the recorded positions to compute the TCP using geometric algorithms
+    
   (b) **Automatic** - _using sensors or dedicated tools_
       - Robot controller automatically records the position and orientation data from the sensor or camera
       - Use the software to compute the TCP based on the sensor feedback
-3. Record and save the TCP position in the robot controller
+4. Record and save the TCP position in the robot controller
 
 **Common Challenges:**
 - Accuracy: Ensuring that the recorded positions are accurate and free from errors
 - Repeatability: Verifying that the robot can consistently return to the same TCP
 - Environmental Factors: Accounting for any environmental changes that could affect the calibration process
 
+**STEP-BY-STEP:**
+Robot controller --> Jogging --> Tool --> New --> Define --> 4 point
+<img width="574" alt="ToolCalibration" src="https://github.com/GIS-EPFL/Robots/assets/91248123/0bf19fa6-5085-4f98-b4f1-1806e2da1735">
+
+
+OUTSTANDING
 -------
 - How to use the calibration camera system from IBOIS
-- Robot controller - jogging - tool - new - define - 4 point
-<img width="574" alt="ToolCalibration" src="https://github.com/GIS-EPFL/Robots/assets/91248123/0bf19fa6-5085-4f98-b4f1-1806e2da1735">
+
 
 ## Track calibration / Axis calibration
 
 Track calibration should be done only after tool calibration (above). The robot's external linear track can be a useful tool to extend the reach and capabilities of the system. This is the process through which a robot's external linear track / rail is calibrated to ensure accurate positioning and movement. 
 
-
+**STEP-BY-STEP:**
+Main menu --> Calibration --> Track --> Base Frame --> 3-points --> Modify Position (REPEAT 3 TIMES) --> Save Positions
+![PAGE 27](https://github.com/GIS-EPFL/Robots/assets/14881383/c16326eb-4039-47dd-ac1f-a554347d7ee0)
 
 ## Update in URDF
 
