@@ -1,18 +1,20 @@
 # Robots in GIS
 
-## To-do for the next time
 
-- [ ] update urdf so that it is not in the middle, move urdf by the translation value
-- [ ] find an object that represents a plane, move robot to that position, get the position in code, move robot out of tha position, then from code move the robot to the measured target, check if the result is the same
-- [ ] linear movements
-- [ ] move rail while keeping the end effector at the same position
-- [ ] ios of robot
-- [ ] write a wish-list what to ask to Philippe
-- [ ] custom tool tutorial for the robot studio
+# Preparation Work 
 
-## Playground
-- [ ] attach tool
-- [ ] send multiple planes, by converting the grashopper to python code
+## Install RRC on Robots
+
+This process is already finished on all GIS-robots. If you need to do so please follow the documetation by Isla Xi Han (WIP Jingwen will put it somewhere)
+
+## Software Installation
+
+
+
+## Licenses
+
+- [ ] (Optional) RobotStudio licenses
+- [ ] (On the robot side)RRC license
 
 
 ## Tutorials
@@ -23,10 +25,6 @@
 - [X] https://github.com/compas-teaching/COMPAS-II-FS2022
 
 
-## Licenses
-
-- [ ] RobotStudio licenses
-- [ ] RRC license
 
 ## Main robot files (URDFs, backups, docker-image)
 
