@@ -51,7 +51,6 @@ Robot controller --> Jogging --> Tool --> New --> Define --> 4 point
 **II.** IBOIS Tool Calibration Camera
 -------
 The IBOIS camera system can be used to calibrate your tool. This device is accompanied by a laptop where the calibration program, SharpCap, is pre-installed. The steps for use are as follows:  
-
       - Open the device case and accompanying laptop, and plug the two USB cords from the cameras into the inputs on the laptop.  
       <img width="300" alt="camera" src="https://github.com/GIS-EPFL/Robots/assets/14881383/98f057ad-546a-4d0b-82e5-e6817c2fabae">  
       - Open two separate instances of the software, SharpCap. Split screens so you have a side-by-side view of the two windows.  
