@@ -69,8 +69,9 @@ Main menu --> Calibration --> Track --> Base Frame --> 3-points --> Modify Posit
      - empty files in robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irbt6004_670_moveit_config
      - create moveit package (refer to **Section 3**)
 
-
 # **Section 2** - IRBT-6700  Dual Robot Calibration (Marirena)
+
+I have a little suggestion, can the image in this chapter to be more compacted when you have time? so they won't occupy so much space in a page. (Jingwen)
 
 ## **I.** 8 Point calibration method
 
@@ -124,6 +125,9 @@ Main menu --> Calibration --> Track --> Base Frame --> 3-points --> Modify Posit
 - Create moveit package from URDF (refer to **Section 3**)
 
 # **Section 3** - Create moveit package from URDF (Joseph)
+
+To understand general knowledge about URDF, XACRO... please refer to
+[General Knowledge](https://github.com/GIS-EPFL/Robots/blob/main/robot_files/General%20Knowledge.md)
 
 1. Update URDF as described in **Section 1 IV / 2 II** 
 2. Empty the folder 4_urdfs\abb_irbt6004_670_moveit_config
