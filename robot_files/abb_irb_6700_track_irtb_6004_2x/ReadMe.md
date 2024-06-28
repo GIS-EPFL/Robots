@@ -1,6 +1,24 @@
-# IRBT-6700 Single Robot Calibration (Alex)
+# **Section 0** - For General Users (Jingwen)
 
-## Tool calibration
+## **I .** Introduction
+
+If you do not need to recalibrate the robots (for example, you only need to use one robot without track, one robot with already calibrated track, or you need to use two robots and they are already calibrated). You only need to understand the file structure and the use of yml file with docker (follow II, III). 
+
+For people who want to calibrate robots (for example they want to recalibrate tracks, they have a new two robot system...), you can follow **Section 1 - 3** to create your own moveit package. Before doing so on GIS-robots, please inform repo maintainer (Jingwen, Eleni, Alex, Marirena, Joseph). We just want to check if your new calibration will change the current URDF data. Also let us know if you find out any mistakes with the URDF file. 
+
+**Disclaimer:** The calibration method for two robots here is developed by Jingwen Wang and Wenjun Liu during their master thesis at ETH Zurich, and it is not the only method of doing calibration. We believe it is a relative good method for robots with absolute accuracy (FYI ABB Gofa does not have absolute accuracy, so this method is tricky to be used there). If you have your own easier workflow feel free to use it instead of following our workflow, since not every project need high accuracy. Also if you believe you have better/faster calibration method feel free to discuss with us ;) We are open to improvements.  
+
+## **II .** File Structure
+
+
+
+## **III .** General uses
+
+
+
+# **Section 1** - IRBT-6700 Single Robot Calibration (Alex)
+
+## **I .**Tool calibration
 
 Prior to calibration, the tool centre point (TCP) defaults to the centre point of the robot flange - the mounting plate to which a tool or end effector will be attached. After mounting a desired tool, such as a gripper, milling, or other end effector to perform robotic function, the TCP is the exact point where this tool will interact with a workpiece. It is important to accurately determine this point in order to achieve precision in robotic path planning and motion control.
 
@@ -8,11 +26,11 @@ TCP calibration is the process through which the user defines where in space the
 1. Install the tool securely on the robot's flange or mounting plate
 2. Select the tool calibration method
 
-  **Manual Calibration is what we use here at the GIS** - _using a fixed object or calibration plate_
+**Manual Calibration is what we use here at the GIS** - _using a fixed object or calibration plate_
       - Move the robot to several different positions (depending on if 3 or 4-point calibration is used)
-      - Record the position data from the robot's controller
-      - Use the recorded positions to compute the TCP using geometric algorithms
-    
+            - Record the position data from the robot's controller
+            - Use the recorded positions to compute the TCP using geometric algorithms
+
 3. Record and save the TCP position in the robot controller
 4. Declare the new tool as current **add images - Alex**
 
@@ -26,139 +44,125 @@ Robot controller --> Jogging --> Tool --> New --> Define --> 4 point
 <img width="574" alt="ToolCalibration" src="https://github.com/GIS-EPFL/Robots/assets/91248123/0bf19fa6-5085-4f98-b4f1-1806e2da1735">
 
 
-OUTSTANDING
+**II.** Camera OUTSTANDING
 -------
 - How to use the calibration camera system from IBOIS -- spoke to Andreas regarding this, currently requesting information and contact info from Gilles and Petras for the calibration consultants that came in
 
 
-## Track calibration / Axis calibration
+## **III.** Track calibration / Axis calibration
 
-Track calibration has been completed for GIS robot set-up, and should not normally need to be changed or adjusted. It should only be redone if completely necessary, and only after speaking with one of the individuals managing this repo (Jingwen Wang, Marirena Kladeftira, Joseph Tannous, or Alexandra Pittiglio)! The robot's external linear track can be a useful tool to extend the reach and capabilities of the system. This is the process through which a robot's external linear track / rail is calibrated to ensure accurate positioning and movement. 
+Track calibration has been completed for GIS robot set-up, and **should not normally need to be changed or adjusted.** It should only be redone if completely necessary, and only after speaking with one of the individuals managing this repo (Jingwen Wang, Marirena Kladeftira, Joseph Tannous, or Alexandra Pittiglio)! The robot's external linear track can be a useful tool to extend the reach and capabilities of the system. This is the process through which a robot's external linear track / rail is calibrated to ensure accurate positioning and movement. 
 
 **STEP-BY-STEP:**
 Main menu --> Calibration --> Track --> Base Frame --> 3-points --> Modify Position (REPEAT 3 TIMES) --> Save Positions
 ![PAGE 27](https://github.com/GIS-EPFL/Robots/assets/14881383/c16326eb-4039-47dd-ac1f-a554347d7ee0)
 
-## Update in URDF
+## **IV.** Update in URDF (Alex)
 
-- From Robotstudio to get quaternion
-![robotstudio_axis_calibration](https://github.com/GIS-EPFL/Robots/assets/91248123/9a07bf4c-0c0c-4dae-9579-f0b5070a409d)
-- from quaternion to Euler angles 
-- from Euler angles to URDF
+1. Get quaternion values from Robotstudio
+     ![robotstudio_axis_calibration](https://github.com/GIS-EPFL/Robots/assets/91248123/9a07bf4c-0c0c-4dae-9579-f0b5070a409d)
+2. Calculate from Euler angles from quaternion 
+     - The calculation file is in robot_files\abb_irb_6700_track_irtb_6004\5_playgrounds\python\calibration_rpy.py
 
-# IRBT-6700  Dual Robot Calibration (Marirena)
+3. Input Euler angles into URDF for robot motion planning
+     - robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irbt6004_670_support\urdf\abb_irb6700_175_305_ibois.xacro
+     - empty files in robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irbt6004_670_moveit_config
+     - create moveit package (refer to **Section 3**)
 
-## 8 Point calibration method
 
-1. Finish the axis calibration for each robot you want to use collaboratively as described in the steps above.
+# **Section 2** - IRBT-6700  Dual Robot Calibration (Marirena)
+
+## **I.** 8 Point calibration method
+
+1. Finish the axis calibration for each robot you want to use collaboratively as described in the steps above. (Technically this is already finished. You can obtain the Euler angle values from folder abb_irb_track_irtb_6004 and abb_irb_track_irtb_6004_iris, refer to Section 1 IV). IRBT 6700 two robots are named as Aurora and Iris (Facing north, left is Aurora and right is Iris). 
+
 2. Mount a "pin tool" on each robot so you can measure the points accurately. There are two pins available in GIS that you can use.
-  <img width="574" alt="pins" src="https://github.com/GIS-EPFL/Robots/assets/22766174/9f3e3cb6-77df-41a8-a17c-74883bce9ea9">
+    <img width="574" alt="pins" src="https://github.com/GIS-EPFL/Robots/assets/22766174/9f3e3cb6-77df-41a8-a17c-74883bce9ea9">
 
 4. Set tool as the corresponding pintool (e.g. screwPin for the threaded pin, or pencil for the wooden pencil in the picture)
-  <img width="574" alt="pinTool" src="https://github.com/GIS-EPFL/Robots/assets/22766174/6c0f20da-6777-409c-8fc8-f2e87fd87c22">
+    <img width="574" alt="pinTool" src="https://github.com/GIS-EPFL/Robots/assets/22766174/6c0f20da-6777-409c-8fc8-f2e87fd87c22">
 
-5. Set coordinate system to base
-6. Get the precision camera and the laptop that contains the software from CRCL. This is a custom equipment with two micro cameras to help you reach the same point with the two robots precisely.
-  <img width="574" alt="camera" src="https://github.com/GIS-EPFL/Robots/assets/22766174/199a2f2c-ff50-4bd2-b2fb-937eeb4904eb">
+4. Set coordinate system to base
 
-7. Consider 8 points that you want to measure with the two robots. Keep in mind that in the area where the 8 points are measured the urdf will be most accurate, so try to disperse them in the area of reach of both robots.
-8. For each point you place this camera at jog one robot first in place until you see the tip well in the target area. Write down the position of the robot at that point. Repeat for the second robot. Move to the next point until you have measured all 8 points with both robots.
+6. Get the precision camera and the laptop that contains the software from CRCL. This is a custom equipment with two micro cameras to help you reach the same point with the two robots precisely. (refer to **Section1 II**)
+    <img width="574" alt="camera" src="https://github.com/GIS-EPFL/Robots/assets/22766174/199a2f2c-ff50-4bd2-b2fb-937eeb4904eb">
+
+6. Consider 8 points that you want to measure with the two robots. Keep in mind that in the area where the 8 points are measured the urdf will be most accurate, so try to disperse them in the area of reach of both robots. (Mathematically you only need three points to calculate the transformation matrix, we decided to use 8 to minimize the error.)
+
+7. For each point you place this camera at jog one robot first in place until you see the tip well in the target area. Write down the position of the robot at that point. Repeat for the second robot. Move to the next point until you have measured all 8 points with both robots.
+
 9. Navigate to the following following directory <your_local_directory>/Robots/robot_files/<new_setup(new_setup>(in this case abb_irb_6700_track_irtb_6004_2x)/5_playgrounds and open or create a calibration file. You can find it in this repo with the name "dual_robot_calibration.py".
    Replace the values that you measured with the two robots for the 8 points in the matrix as seen below:
-  <img width="574" alt="measured_pts" src="https://github.com/GIS-EPFL/Robots/assets/22766174/6a0b3c07-e774-47ec-9eac-e338e00f276b">
+    <img width="574" alt="measured_pts" src="https://github.com/GIS-EPFL/Robots/assets/22766174/6a0b3c07-e774-47ec-9eac-e338e00f276b">
 
-   Run the script on your editor to calculate the transformation matrix and see the error. Copy the parameter on your console as seen in the picture bellow and paste it in the "param" variable in the script.
-  <img width="574" alt="param" src="https://github.com/GIS-EPFL/Robots/assets/22766174/7735c864-9a8a-43e6-84b7-1dfee42dad8f">
+   Run the script on your editor to calculate the transformation matrix and see the error. Copy the parameter on your console as seen in the picture bellow and paste it in the "param" variable in the script. (Those value is estimated based on average method, the error is based on min squared error. We use those values as the starting point of the optimization.)
+    <img width="574" alt="param" src="https://github.com/GIS-EPFL/Robots/assets/22766174/7735c864-9a8a-43e6-84b7-1dfee42dad8f">
 
-11.
+   Re-run the script, and if the optimization method reduce the min square errors. If yes, use the top parameters instead of the bottom parameters. 
+   
+   (Screenshot)
+   
+   By far we only calculated the transformation matrix between two coordinate system. But the track axis of the robot also need to add on to that transformation matrix so that robot can be located to the right location. So we need to go to step 9. 
+   
+   (I suggest to add a picture to explain those transformation  Jingwen... let me know if this is too complicated or not)
+   
+9. Calculate combined transformation of two robot and axis transformation with the script
+
+    robot_files\abb_irb_6700_track_irtb_6004_2x\5_playgrounds\axis_calibration.py
+
+    To be noticed, here **rob_1 is Iris. rob_2 is Aurora.**
+
+    Basically here we are calculating the relative transformation matrix or Aurora relatively to Iris. 
+
+##  **II.** Update URDF
 
 - Update URDF
-- Calculate transformation matrix considering track calibration (quaternion)
+  - Empty the folder <your_local_directory>\robot_files\abb_irb_6700_track_irtb_6004_2x\4_urdfs\abb_irbt6004_670_tworobots_moveit_config
+  - Update the robot_files\abb_irb_6700_track_irtb_6004_2x\4_urdfs\abb_irbt6004_670_support\urdf\abb_irb6700_175_305_ibois_tworobots.xacro with the value you already calculated from 10 and from previous track calibration
+  - rob_1 is Iris. rob_2 is Aurora
+  - rob_1 values should consider track calibration of Iris, rob_2 valuse should use the one from Step 9
+- Create moveit package from URDF (refer to **Section 3**)
 
-# Create moveit package from URDF (Joseph)
+# **Section 3** - Create moveit package from URDF (Joseph)
 
+1. Update URDF as described in **Section 1 IV / 2 II** 
+2. Empty the folder 4_urdfs\abb_irbt6004_670_moveit_config
+3. Change the docker yml file 4_urdfs\docker-compose_for_the_use_of_simulation.yml, comment out moveit-service, uncomment moveit-service-setup-assistant
+4. Open docker container (clean up existing containers if necessary, one screenshot here)
+5. Open Xlaunch / Xming app as the background (acting as GUI for listening to Linux virtual machine in docker ) 
+6. Compose up the yml file (remember to open yml file with GISROBOTS, as it refers to many other folders) (Screenshot)
+7. https://gramaziokohler.github.io/compas_fab/0.11.0/examples/03_backends_ros/08_ros_create_moveit_package_from_custom_urdf.html
+8. For one robot
+   - Generate Self-Collision Matrix - > will become SRDF file
+   - Add Virtual Joints
+   - Generate planning group
+     - "manipulator" | "arm_track" (briefly explain the difference)
+     - Kinematic Solver: kdl
+     - Group Default Planer
+     - Add components to group - Add Kin. Chain 
+     - Can be checked with srdf file later. (Screenshot)
 
-## URDF
+   - End Effectors, Passive Joints (skip)
+   - Author Information (do not put any special symbols such as "&" there)
+   - Generate Configuration Files: Select the mapped moveit config folder
 
-### Introduction
+9. For two robot
+   - Generate Self-Collision Matrix - > will become SRDF file
+   - Add Virtual Joints
+   - Generate planning group
+     - "rob1" | "rob1_track" | "rob2" | "rob2_track" (briefly explain the difference)
+     - Kinematic Solver: kdl
+     - Group Default Planer
+     - Add components to group - Add Kin. Chain 
+     - Can be checked with srdf file later. (Screenshot)
+   - End Effectors, Passive Joints (skip)
+   - Author Information (do not put any special symbols such as "&" there)
+   - Generate Configuration Files: Select the mapped moveit config folder
 
-URDF (Unified Robot Description Format) is a file format and XML-based markup language used to specify a robot's kinematic and dynamic features. It is the foundation for robot description in ROS and is required for a variety of applications such as robot visualization, motion planning, and simulation.
-
-[URDF Structure](/robot_files/abb_irb_6700_track_irtb_6004_2x/image/URDF.png)
-
-### Robot Description
-
-To describe a robot using URDF, the first step is to break the physical structure down into separate components called links. The origin for the link's coordinate system can be chosen arbitrarily, though for rotating links, it should be at the pivot point.
-
-Next, understand how the links are joined together and how they relate to each other through connections called joints. Joints define the relationship between the origins (coordinate frames) of the links, determining the position and rotation of each link in space. Each link, apart from the first one, has a corresponding joint specifying its connection to its parent link.
-
-![Link Structure](/robot_files/abb_irb_6700_track_irtb_6004_2x/image/Link.png)
-
-### Joint Types
-
-![Joint Structure](/robot_files/abb_irb_6700_track_irtb_6004_2x/image/Joint.png)
-
-When describing a joint, specify the type of motion it uses. The four common types of joints are:
-1. **Fixed:** No relative movement between parent and child links.
-2. **Revolute:** Rotational motion around a single axis.
-3. **Prismatic:** Linear motion along a single axis.
-4. **Continuous:** Similar to revolute but with unbounded rotation.
-
-|  |  |
-|-------|-------|
-| Fixed | Revolute |
-| ![GIF 1](/robot_files/abb_irb_6700_track_irtb_6004_2x/image/Fixed.gif") | ![GIF 2](/robot_files/abb_irb_6700_track_irtb_6004_2x/image/Revolute.gif) |
-| Prismatic | Continuous |
-| ![GIF 3](/robot_files/abb_irb_6700_track_irtb_6004_2x/image/Prismatic.gif) | ![GIF 4](/robot_files/abb_irb_6700_track_irtb_6004_2x/image/Continuous.gif) |
-|  |  |
-
-
-### XML Structure
-
-URDF is based on XML, with components represented as a series of nested tags.
-
-## XACRO
-
-### Introduction
-
-XACRO (eXtensible Access Control Markup Language) is a tool that extends the capabilities of URDF by enabling the use of macros to simplify and manage the robot description files.
-
-### Benefits
-
-- **File Splitting:** Allows URDF files to be split into multiple manageable files.
-- **Avoid Repetition:** Provides tools to avoid repetitive definitions in URDF files.
-
-### Usage
-
-To enable the use of XACRO in URDF files, add the following to the robot tag:
-```xml
-<robot xmlns:xacro="http://wiki.ros.org/xacro">
-```
-
-This can be included in every robot tag in URDF files. To use the URDF file, run the XACRO program on it. XACRO processes the files, resolving any macros, and outputs a complete URDF into memory.
-
-Typically, this processed URDF is fed into the robot state publisher, which then publishes the complete URDF on the robot description topic, making it available to any node that needs it. This process is usually managed through a launch file, which reads the URDF files, passes them into XACRO, and then into the robot state publisher.
-
-![XACRO Processing](/robot_files/abb_irb_6700_track_irtb_6004_2x/image/XACRO.png)
-
-
-### Example
-
-An example of including another XACRO file:
-```xml
-<xacro:include filename="another_robot.xacro" />
-```
-
-Splitting URDF into multiple files helps manage large and complex robot descriptions by separating components, making it easier to locate and modify specific parts.
-
-
-## Docker container 
-- Functions of different ROS service (roscore, rosfilesaver, rosbridge, moveitsetup assistant, moveit, rrcdriver)
-- Function of Xlaunch 
-## Create moveit package
-- https://gramaziokohler.github.io/compas_fab/0.11.0/examples/03_backends_ros/08_ros_create_moveit_package_from_custom_urdf.html
-- SRDF File
-- Other files for understanding
-
-## RVIZ
-## Grasshopper file for checking
+10. Compose down
+11. Uncomment moveit-service, comment out moveit-service-setup-assistant
+12. Put RVIZ as true, compose up as quick check (screenshot)
+13. Put RVIZ as false save everything
+14. Create yml files for simulation and file for use for real robots (abb driver is there or not)
+15. (Optional) You can already use the above files for everything you need. But if you prefer to work with cleaner folder structure, you can combine XXX_moveit_config with XXX_support. Just copy /meshes /urdf folder from /support to /moveit_config, change all the reference to /support folder to /_moveit_config folder, delete the mapping address in yml file. It's a bit of work but it looks cleaner. 
+16. You can now use the moveit package, compose up with docker and play around with grasshopper file in 5_playgrounds, do not forget to compuse down everytime when you finish your work
