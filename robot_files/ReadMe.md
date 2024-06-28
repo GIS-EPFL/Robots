@@ -26,29 +26,40 @@ TCP calibration is the process through which the user defines where in space the
 1. Install the tool securely on the robot's flange or mounting plate
 2. Select the tool calibration method
 
-**Manual Calibration is what we use here at the GIS** - _using a fixed object or calibration plate_
-      - Move the robot to several different positions (depending on if 3 or 4-point calibration is used)
-            - Record the position data from the robot's controller
-            - Use the recorded positions to compute the TCP using geometric algorithms
+**Manual Calibration is what we use here at the GIS** - _using a fixed pointed object_
+      
+      - Set-up your calibration tool in a suitable position within reach of the robot(s). A point/spike on a heavy plate exists for this purposed in the GIS (ask Gregory or Gilles)
+      - Approach the end of this spike several times, from several different approach angles (depending on if 3 or 4-point calibration is used)
+      - Each time, record the position data from the robot's controller
+      - Use the recorded positions to compute the TCP using geometric algorithms
 
 3. Record and save the TCP position in the robot controller
-4. Declare the new tool as current **add images - Alex**
+4. Make sure you've declared your new tool as the current tool
 
 **Common Challenges:**
-- Accuracy: Ensuring that the recorded positions are accurate and free from errors
-- Repeatability: Verifying that the robot can consistently return to the same TCP
-- Environmental Factors: Accounting for any environmental changes that could affect the calibration process
+      - Accuracy: Ensuring that the recorded positions are accurate and free from errors
+      - Repeatability: Verifying that the robot can consistently return to the same TCP
+      - Environmental Factors: Accounting for any environmental changes that could affect the calibration process
 
 **STEP-BY-STEP:**
 Robot controller --> Jogging --> Tool --> New --> Define --> 4 point
 <img width="574" alt="ToolCalibration" src="https://github.com/GIS-EPFL/Robots/assets/91248123/0bf19fa6-5085-4f98-b4f1-1806e2da1735">
 
 
-**II.** Camera OUTSTANDING
+**II.** IBOIS Tool Calibration Camera
 -------
-- How to use the calibration camera system from IBOIS -- spoke to Andreas regarding this, currently requesting information and contact info from Gilles and Petras for the calibration consultants that came in
+The IBOIS camera system can be used to calibrate your tool. This device is accompanied by a laptop where the calibration program, SharpCap, is pre-installed. The steps for use are as follows:
+      - Open the device case and accompanying laptop, and plug the two USB cords from the cameras into the inputs on the laptop.
+      ![camera](https://github.com/GIS-EPFL/Robots/assets/14881383/98f057ad-546a-4d0b-82e5-e6817c2fabae)
+      - Open two separate instances of the software, SharpCap. Split screens so you have a side-by-side view of the two windows.
+      - In each opened instance of the software, select the dropdown menu "Cameras" --> on one window select USB 1, one the other window select USB 2 (just ensure you are viewing one camera from each instance of the software)
+      - In each window, select the below dropdown menu --> "Circle"
+      ![camera_circle](https://github.com/GIS-EPFL/Robots/assets/14881383/8119fa67-c883-43c0-84e2-f1e4c2d5a55b)
+      - Adjust the focus (manually) on each camera until you see a sharp image in the respective camera view. **After adjusting in this step, don't touch the camera focus again throughout the process or you will incur potential error**
+      - Jog the robot until you see the TCP (tool centre point) as close as possible to the central crosshairs in the camera view.
+      ![camera_twoview](https://github.com/GIS-EPFL/Robots/assets/14881383/7ded446a-2305-4ff9-bf68-1bf38a335e23)
 
-
+      
 ## **III.** Track calibration / Axis calibration
 
 Track calibration has been completed for GIS robot set-up, and **should not normally need to be changed or adjusted.** It should only be redone if completely necessary, and only after speaking with one of the individuals managing this repo (Jingwen Wang, Marirena Kladeftira, Joseph Tannous, or Alexandra Pittiglio)! The robot's external linear track can be a useful tool to extend the reach and capabilities of the system. This is the process through which a robot's external linear track / rail is calibrated to ensure accurate positioning and movement. 
