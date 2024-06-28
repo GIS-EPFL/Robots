@@ -73,7 +73,7 @@ Main menu --> Calibration --> Track --> Base Frame --> 3-points --> Modify Posit
 ## **IV.** Update in URDF (Alex)
 After track calibration has been complete, you must update the URDF so these changes are reflected in the digital model as well. 
 1. Get quaternion values from Robotstudio
-   <img width="300" alt="circle" src="https://github.com/GIS-EPFL/Robots/assets/91248123/9a07bf4c-0c0c-4dae-9579-f0b5070a409d">  
+<img width="500" alt="circle" src="https://github.com/GIS-EPFL/Robots/assets/91248123/9a07bf4c-0c0c-4dae-9579-f0b5070a409d">  
 
 2. Calculate Euler angles from the Quaternion values 
       - URDF requires Euler angles rather than Quaternion, therefore a transformation / formatting is applied to the values 
