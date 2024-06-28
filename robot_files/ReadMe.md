@@ -62,6 +62,7 @@ The IBOIS camera system can be used to calibrate your tool. This device is accom
       <img width="300" alt="twoview" src="https://github.com/GIS-EPFL/Robots/assets/14881383/7ded446a-2305-4ff9-bf68-1bf38a335e23">
       
 ## **III.** Track calibration / Axis calibration
+**IMPORTANT: if you desire to redo the track calibration for either Aurora or Iris (the two large GIS robots), you must first speak to a member of this team so we can ensure the update is reflected in the shared repository**
 
 Track calibration has been completed for GIS robot set-up, and **should not normally need to be changed or adjusted.** It should only be redone if completely necessary, and only after speaking with one of the individuals managing this repo (Jingwen Wang, Marirena Kladeftira, Joseph Tannous, or Alexandra Pittiglio)! The robot's external linear track can be a useful tool to extend the reach and capabilities of the system. This is the process through which a robot's external linear track / rail is calibrated to ensure accurate positioning and movement. 
 
@@ -70,19 +71,21 @@ Main menu --> Calibration --> Track --> Base Frame --> 3-points --> Modify Posit
 ![PAGE 27](https://github.com/GIS-EPFL/Robots/assets/14881383/c16326eb-4039-47dd-ac1f-a554347d7ee0)
 
 ## **IV.** Update in URDF (Alex)
-
+After track calibration has been complete, you must update the URDF so these changes are reflected in the digital model as well. 
 1. Get quaternion values from Robotstudio
      ![robotstudio_axis_calibration](https://github.com/GIS-EPFL/Robots/assets/91248123/9a07bf4c-0c0c-4dae-9579-f0b5070a409d)
-2. Calculate from Euler angles from quaternion 
-      - URDF requires Euler angles rather than Quaternion, therefore a transformation is applied to the values 
+2. Calculate Euler angles from the Quaternion values 
+      - URDF requires Euler angles rather than Quaternion, therefore a transformation / formatting is applied to the values 
       - The calculation file for Aurora is here: robot_files\abb_irb_6700_track_irtb_6004\5_playgrounds\python\calibration_rpy.py
       - The calculation file for Iris is here: robot_files\abb_irb_6700_track_irtb_6004_iris\5_playgrounds\python\calibration_rpy.py
       - ![QuaternionToEuler](https://github.com/GIS-EPFL/Robots/assets/14881383/4dd43577-5ebb-41d6-bc35-668774fe1722)
 
 3. Input Euler angles into URDF for robot motion planning
-     - robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irbt6004_670_support\urdf\abb_irb6700_175_305_ibois.xacro
-     - empty files in robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irbt6004_670_moveit_config
-     - create moveit package (refer to **Section 3**)
+      - The file for Aurora is here: robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irbt6004_670_support\urdf\abb_irb6700_175_305_ibois.xacro
+      - The file for Iris is here: robot_files\abb_irb_6700_track_irtb_6004_iris\4_urdfs\abb_irbt6004_670_support\urdf\abb_irb6700_175_305_ibois.xacro
+      - ![EulerValueChange](https://github.com/GIS-EPFL/Robots/assets/14881383/f3dd5240-01dd-4fce-9da7-c26a12f5a9d7)
+
+4. Create moveit package (refer to **Section 3**)
 
 # **Section 2** - IRBT-6700  Dual Robot Calibration (Marirena)
 
