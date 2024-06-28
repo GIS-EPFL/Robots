@@ -74,7 +74,10 @@ Main menu --> Calibration --> Track --> Base Frame --> 3-points --> Modify Posit
 1. Get quaternion values from Robotstudio
      ![robotstudio_axis_calibration](https://github.com/GIS-EPFL/Robots/assets/91248123/9a07bf4c-0c0c-4dae-9579-f0b5070a409d)
 2. Calculate from Euler angles from quaternion 
-     - The calculation file is in robot_files\abb_irb_6700_track_irtb_6004\5_playgrounds\python\calibration_rpy.py
+      - URDF requires Euler angles rather than Quaternion, therefore a transformation is applied to the values 
+      - The calculation file for Aurora is here: robot_files\abb_irb_6700_track_irtb_6004\5_playgrounds\python\calibration_rpy.py
+      - The calculation file for Iris is here: robot_files\abb_irb_6700_track_irtb_6004_iris\5_playgrounds\python\calibration_rpy.py
+      - ![QuaternionToEuler](https://github.com/GIS-EPFL/Robots/assets/14881383/4dd43577-5ebb-41d6-bc35-668774fe1722)
 
 3. Input Euler angles into URDF for robot motion planning
      - robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irbt6004_670_support\urdf\abb_irb6700_175_305_ibois.xacro
