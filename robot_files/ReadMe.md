@@ -37,6 +37,7 @@ TCP calibration is the process through which the user defines where in space the
 4. Make sure you've declared your new tool as the current tool
 
 **Common Challenges:**
+
       - Accuracy: Ensuring that the recorded positions are accurate and free from errors
       - Repeatability: Verifying that the robot can consistently return to the same TCP
       - Environmental Factors: Accounting for any environmental changes that could affect the calibration process
@@ -50,7 +51,8 @@ Robot controller --> Jogging --> Tool --> New --> Define --> 4 point
 -------
 The IBOIS camera system can be used to calibrate your tool. This device is accompanied by a laptop where the calibration program, SharpCap, is pre-installed. The steps for use are as follows:
       - Open the device case and accompanying laptop, and plug the two USB cords from the cameras into the inputs on the laptop.
-      ![camera](https://github.com/GIS-EPFL/Robots/assets/14881383/98f057ad-546a-4d0b-82e5-e6817c2fabae)
+      <img src="![camera](https://github.com/GIS-EPFL/Robots/assets/14881383/98f057ad-546a-4d0b-82e5-e6817c2fabae)" width="100" height="100"/>
+
       - Open two separate instances of the software, SharpCap. Split screens so you have a side-by-side view of the two windows.
       - In each opened instance of the software, select the dropdown menu "Cameras" --> on one window select USB 1, one the other window select USB 2 (just ensure you are viewing one camera from each instance of the software)
       - In each window, select the below dropdown menu --> "Circle"
