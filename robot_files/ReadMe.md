@@ -50,16 +50,17 @@ Robot controller --> Jogging --> Tool --> New --> Define --> 4 point
 
 **II.** IBOIS Tool Calibration Camera
 -------
-The IBOIS camera system can be used to calibrate your tool. This device is accompanied by a laptop where the calibration program, SharpCap, is pre-installed. The steps for use are as follows:
-      - Open the device case and accompanying laptop, and plug the two USB cords from the cameras into the inputs on the laptop.
-      - <img width="300" alt="camera" src="https://github.com/GIS-EPFL/Robots/assets/14881383/98f057ad-546a-4d0b-82e5-e6817c2fabae">
-      - Open two separate instances of the software, SharpCap. Split screens so you have a side-by-side view of the two windows.
-      - In each opened instance of the software, select the dropdown menu "Cameras" --> on one window select USB 1, one the other window select USB 2 (just ensure you are viewing one camera from each instance of the software)
-      - In each window, select the below dropdown menu --> "Circle"
-      - <img width="300" alt="circle" src="https://github.com/GIS-EPFL/Robots/assets/14881383/8119fa67-c883-43c0-84e2-f1e4c2d5a55b">      
-      - Adjust the focus (manually) on each camera until you see a sharp image in the respective camera view. **After adjusting in this step, don't touch the camera focus again throughout the process or you will incur potential error**
-      - Jog the robot until you see the TCP (tool centre point) as close as possible to the central crosshairs in the camera view.
-      - <img width="300" alt="twoview" src="https://github.com/GIS-EPFL/Robots/assets/14881383/7ded446a-2305-4ff9-bf68-1bf38a335e23">
+The IBOIS camera system can be used to calibrate your tool. This device is accompanied by a laptop where the calibration program, SharpCap, is pre-installed. The steps for use are as follows:  
+
+      - Open the device case and accompanying laptop, and plug the two USB cords from the cameras into the inputs on the laptop.  
+      <img width="300" alt="camera" src="https://github.com/GIS-EPFL/Robots/assets/14881383/98f057ad-546a-4d0b-82e5-e6817c2fabae">  
+      - Open two separate instances of the software, SharpCap. Split screens so you have a side-by-side view of the two windows.  
+      - In each opened instance of the software, select the dropdown menu "Cameras" --> on one window select USB 1, one the other window select USB 2 (just ensure you are viewing one camera from each instance of the software)  
+      - In each window, select the below dropdown menu --> "Circle"  
+      <img width="300" alt="circle" src="https://github.com/GIS-EPFL/Robots/assets/14881383/8119fa67-c883-43c0-84e2-f1e4c2d5a55b">  
+      - Adjust the focus (manually) on each camera until you see a sharp image in the respective camera view. **After adjusting in this step, don't touch the camera focus again throughout the process or you will incur potential error**  
+      - Jog the robot until you see the TCP (tool centre point) as close as possible to the central crosshairs in the camera view.  
+      <img width="300" alt="twoview" src="https://github.com/GIS-EPFL/Robots/assets/14881383/7ded446a-2305-4ff9-bf68-1bf38a335e23">
       
 ## **III.** Track calibration / Axis calibration
 
