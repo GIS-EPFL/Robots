@@ -73,7 +73,8 @@ Main menu --> Calibration --> Track --> Base Frame --> 3-points --> Modify Posit
 ## **IV.** Update in URDF (Alex)
 After track calibration has been complete, you must update the URDF so these changes are reflected in the digital model as well. 
 1. Get quaternion values from Robotstudio
-     ![robotstudio_axis_calibration](https://github.com/GIS-EPFL/Robots/assets/91248123/9a07bf4c-0c0c-4dae-9579-f0b5070a409d)
+   <img width="300" alt="circle" src="https://github.com/GIS-EPFL/Robots/assets/91248123/9a07bf4c-0c0c-4dae-9579-f0b5070a409d">  
+
 2. Calculate Euler angles from the Quaternion values 
       - URDF requires Euler angles rather than Quaternion, therefore a transformation / formatting is applied to the values 
       - The calculation file for Aurora is here: robot_files\abb_irb_6700_track_irtb_6004\5_playgrounds\python\calibration_rpy.py
@@ -81,6 +82,7 @@ After track calibration has been complete, you must update the URDF so these cha
       - ![QuaternionToEuler](https://github.com/GIS-EPFL/Robots/assets/14881383/4dd43577-5ebb-41d6-bc35-668774fe1722)
 
 3. Input Euler angles into URDF for robot motion planning
+      - The rpy (raw, pitch, yaw) values in the xacro file must be updated for the base frame of the track. Therefore, edit this file the values match the ones calculated in the above step. 
       - The file for Aurora is here: robot_files\abb_irb_6700_track_irtb_6004\4_urdfs\abb_irbt6004_670_support\urdf\abb_irb6700_175_305_ibois.xacro
       - The file for Iris is here: robot_files\abb_irb_6700_track_irtb_6004_iris\4_urdfs\abb_irbt6004_670_support\urdf\abb_irb6700_175_305_ibois.xacro
       - ![EulerValueChange](https://github.com/GIS-EPFL/Robots/assets/14881383/f3dd5240-01dd-4fce-9da7-c26a12f5a9d7)
